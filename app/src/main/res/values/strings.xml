@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AndroidDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello World!</string>
+
+    <!--动画相关的activity-->
+    <string name="activity_animation_base">Animation/BaseAnimation</string>
+    <string name="activity_value_animation">Animation/Value Animation</string>
+    <string name="activity_custom_value_animation">Animation/Custom Value Animation</string>
+
+    <!--view相关-->
+    <string name="activity_list_view_drag">View/ListView/Drag ListView</string>
+
+    <!--屏幕属性-->
+    <string name="activity_screen_property">Screen Property</string>
+    <string name="scale">scale</string>
+    <string name="object">object</string>
+    <string name="value">value</string>
+</resources>
