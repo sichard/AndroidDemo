@@ -28,8 +28,8 @@ public class CustomValueAnimationActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom_value_animation);
         ValueAnimationView view = findViewById(R.id.custom_value_animation_view);
-        mAnimator = ObjectAnimator.ofObject(view, "color", new ColorEvaluator(), Color.BLUE, Color.RED);
-        mAnimator.setDuration(3000);
+        mAnimator = ObjectAnimator.ofObject(view, "color", new ColorEvaluator(), Color.RED, Color.BLUE, Color.GREEN);
+        mAnimator.setDuration(6000);
         mAnimator.setRepeatCount(Animation.INFINITE);
         mAnimator.setRepeatMode(ValueAnimator.REVERSE);
         mAnimator.start();

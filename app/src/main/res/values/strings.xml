@@ -16,4 +16,6 @@
     <string name="scale">scale</string>
     <string name="object">object</string>
     <string name="value">value</string>
+    <!--特效相关-->
+    <string name="activity_path_animation">Special Effect/Path Animation</string>
 </resources>

@@ -6,7 +6,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 
@@ -65,7 +64,6 @@ public class ValueAnimationView extends View {
      * @param color color值(对应属性动画的"color")
      */
     public void setColor(int color) {
-        Log.i("sichard", "ValueAnimationView|setColor:0x" + Integer.toHexString(color));
         mPaint.setColor(color);
         invalidate();
     }
