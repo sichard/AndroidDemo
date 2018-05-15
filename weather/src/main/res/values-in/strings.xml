@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+    <string name="weather_settings">Pengaturan Lokasi Cuaca</string>
+    <string name="locating_tip">Sedang mencari posisi...</string>
+    <string name="locate_fail">Gagal mencari posisi</string>
+    <string name="search_city_empty">Tidak menemukan hasil</string>
+    <string name="search_city_hint">Masukkan nama kota</string>
+    <string name="network_unavailable">Jaringan tidak Tersedia</string>
+	<string name="weather_list_delete_tip">Geser ke kiri untuk menghapus</string>
+	<string name="weather_list_item_delete">Hapus</string>
+	<string name="weather_list_title_date">Tanggal</string>
+    <string name="card_title_weather">Météo</string>
+    <string name="humidity">Kelembapan</string>
+    <string name="market_slogan">Informasi cuaca yang lebih akurat</string>
+    <string name="market_slogan_install">Instal</string>
+    <string name="market_slogan_open">Buka</string>
+    <string name="update_failed">Pembaruan gagal</string>
+    <string name="update_time">Diperbarui</string>
+    <string name="visibility">Kenampakan</string>
+    <string name="weather_update">Memperbarui</string>
+    <string name="wind">Angin</string>
+</resources>

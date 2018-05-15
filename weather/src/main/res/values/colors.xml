@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="weather_black_5">#0d000000</color>
+    <color name="weather_black_20">#33000000</color>
+    <color name="weather_black_30">#4c000000</color>
+    <color name="weather_black_54">#8A000000</color>
+    <color name="weather_black_87">#DE000000</color>
+    <color name="weather_cursor_color">#4FACF9</color>
+    <color name="split_line_color">#e5e5e5</color>
+    <color name="weather_white_40">#66FFFFFF</color>
+    <color name="weather_white_80">#CBFFFFFF</color>
+</resources>

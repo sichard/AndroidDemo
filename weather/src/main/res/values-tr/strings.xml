@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">Hava Durumu</string>
+	<string name="humidity">Nem</string>
+	<string name="market_slogan">Daha kesin hava durumu bilgisi</string>
+	<string name="market_slogan_install">Yükle</string>
+	<string name="market_slogan_open">Aç</string>
+	<string name="update_failed">Güncelleme başarısız</string>
+	<string name="update_time">Güncellendi</string>
+	<string name="visibility">Görüş</string>
+	<string name="weather_update">Güncelleniyor</string>
+	<string name="wind">Rüzgar</string>
+</resources>

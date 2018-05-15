@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">Καιρός</string>
+	<string name="humidity">Υγρασία</string>
+	<string name="market_slogan">Ακριβέστερες πληροφορίες για τον καιρό</string>
+	<string name="market_slogan_install">Εγκατάστ.</string>
+	<string name="market_slogan_open">Άνοιγμα</string>
+	<string name="update_failed">Η ενημέρωση απέτυχε</string>
+	<string name="update_time">Ενημερώθηκε</string>
+	<string name="visibility">Ορατότητ.</string>
+	<string name="weather_update">Ενημέρωση</string>
+	<string name="wind">Αέρας</string>
+</resources>

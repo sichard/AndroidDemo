@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">Moti</string>
+	<string name="humidity">Lagështi</string>
+	<string name="market_slogan">Informacion më i saktë rreth motit</string>
+	<string name="market_slogan_install">Instalo</string>
+	<string name="market_slogan_open">Hap</string>
+	<string name="update_failed">Përditësim i pasuksesshëm</string>
+	<string name="update_time">Përditësuar</string>
+	<string name="visibility">Dukshm.</string>
+	<string name="weather_update">Po përditësohet...</string>
+	<string name="wind">Erë</string>
+</resources>

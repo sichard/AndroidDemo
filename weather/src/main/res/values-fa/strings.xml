@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">آب و هوا</string>
+	<string name="humidity">رطوبت</string>
+	<string name="market_slogan">اطلاعات آب و هوای دقیق تر</string>
+	<string name="market_slogan_install">نصب</string>
+	<string name="market_slogan_open">بازکردن</string>
+	<string name="update_failed">به روزرسانی نشد</string>
+	<string name="update_time">به روزرسانی شد</string>
+	<string name="visibility">قابلیت دید</string>
+	<string name="weather_update">در حال به روزرسانی</string>
+	<string name="wind">باد</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">El tiempo</string>
+	<string name="humidity">Humedad</string>
+	<string name="market_slogan">Información del tiempo más precisa</string>
+	<string name="market_slogan_install">INSTALAR</string>
+	<string name="market_slogan_open">ABIERTO</string>
+	<string name="update_failed">Error de actualización</string>
+	<string name="update_time">Actualizado</string>
+	<string name="visibility">Visibilidad</string>
+	<string name="weather_update">Actualizando</string>
+	<string name="wind">Viento</string>
+</resources>

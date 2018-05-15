@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tct.launcher.weather.view.WeatherDetailScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/weather_location_layout"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:background="@drawable/bg_weather_night"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="79dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/weather_current_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/weather_margin_left"
+                    android:layout_marginTop="8dp"
+                    android:text="shenzhen"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/weather_current_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/weather_current_location"
+                    android:layout_marginLeft="@dimen/weather_margin_left"
+                    android:layout_marginTop="8dp"
+                    android:text="cloud"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/weather_current_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    android:text="—.—"
+                    android:textColor="@android:color/white"
+                    android:textSize="60sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/weather_current_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#DE000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/weather_current_max_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text=""
+                android:textColor="#89000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/weather_current_min_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text=""
+                android:textColor="#89000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#0d000000" />
+
+        <com.tct.launcher.weather.view.WeatherHorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.tct.launcher.weather.view.WeatherTemperatureDiagram
+                    android:id="@+id/weather_temperature_diagram"
+                    android:layout_width="1500dp"
+                    android:layout_height="130dp" />
+
+                <LinearLayout
+                    android:id="@+id/weather_hour_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+            </LinearLayout>
+
+        </com.tct.launcher.weather.view.WeatherHorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#ECEDEF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/weather_list_title_date"
+            android:textColor="#DE000000"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#0d000000" />
+
+        <LinearLayout
+            android:id="@+id/weather_date_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#F2F2F2"
+            android:gravity="center"
+            android:text="AccuWeather"
+            android:textColor="@color/weather_black_54"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</com.tct.launcher.weather.view.WeatherDetailScrollView>

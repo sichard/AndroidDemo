@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">Vær</string>
+	<string name="humidity">Fuktighet</string>
+	<string name="market_slogan">Mer nøyaktig værinformasjon</string>
+	<string name="market_slogan_install">Installer</string>
+	<string name="market_slogan_open">Åpne</string>
+	<string name="update_failed">Oppdatering mislyktes.</string>
+	<string name="update_time">Oppdater</string>
+	<string name="visibility">Synlighet</string>
+	<string name="weather_update">Oppdaterer</string>
+	<string name="wind">Vind</string>
+</resources>

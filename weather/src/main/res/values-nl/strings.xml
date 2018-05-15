@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">Weer</string>
+	<string name="humidity">Vochtigh.</string>
+	<string name="market_slogan">Nauwkeurigere weersgegevens</string>
+	<string name="market_slogan_install">Installeren</string>
+	<string name="market_slogan_open">Openen</string>
+	<string name="update_failed">Bijwerken mislukt</string>
+	<string name="update_time">Bijgewerkt</string>
+	<string name="visibility">Zicht</string>
+	<string name="weather_update">Bijwerken</string>
+	<string name="wind">Wind</string>
+</resources>

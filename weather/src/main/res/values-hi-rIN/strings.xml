@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="weather_settings">मौसम स्थान सेटिंग्स</string>
+	<string name="locating_tip">अभी स्थान की खोज कर रहा है...</string>
+	<string name="locate_fail">स्थान की खोज करना विफल रहा</string>
+	<string name="search_city_empty">कोई परिणाम नहीं मिला</string>
+	<string name="search_city_hint">शहर का नाम डालें</string>
+	<string name="network_unavailable">नेटवर्क उपलब्ध नहीं है</string>
+	<string name="weather_list_delete_tip">हटाने के लिए बाईं ओर स्लाइड करें</string>
+	<string name="weather_list_item_delete">हटाएँ</string>
+	<string name="weather_list_title_date">दिनांक</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">Време</string>
+	<string name="humidity">Влажност</string>
+	<string name="market_slogan">Поточни информации за временска прогноза</string>
+	<string name="market_slogan_install">Инсталирај</string>
+	<string name="market_slogan_open">Отвори</string>
+	<string name="update_failed">Неуспешно ажурирање</string>
+	<string name="update_time">Ажурирана</string>
+	<string name="visibility">Видлив.</string>
+	<string name="weather_update">Се ажурира</string>
+	<string name="wind">Ветер</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">天気</string>
+	<string name="humidity">湿度</string>
+	<string name="market_slogan">詳細な天気情報</string>
+	<string name="market_slogan_install">インストール</string>
+	<string name="market_slogan_open">開く</string>
+	<string name="update_failed">更新失敗</string>
+	<string name="update_time">更新済み</string>
+	<string name="visibility">視界</string>
+	<string name="weather_update">アップデートしています</string>
+	<string name="wind">風</string>
+</resources>

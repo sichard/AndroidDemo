@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">Ilm</string>
+	<string name="humidity">Niiskus</string>
+	<string name="market_slogan">Täpsem ilmateave</string>
+	<string name="market_slogan_install">INSTALLI</string>
+	<string name="market_slogan_open">AVA</string>
+	<string name="update_failed">Värskendamine ebaõnnestus</string>
+	<string name="update_time">Uuendatud</string>
+	<string name="visibility">Nähtavus</string>
+	<string name="weather_update">Värskendamine</string>
+	<string name="wind">Tuul</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="locate_fail">Ошибка определения местоположения!</string>
+    <string name="locating_tip">Позиционирование текущего местоположения...</string>
+    <string name="network_unavailable">Сеть недоступна</string>
+    <string name="search_city_empty">Ничего не найдено</string>
+    <string name="search_city_hint">Введите название города</string>
+    <string name="weather_settings">Настройки Местоположения Погоды</string>
+    <string name="weather_list_delete_tip">Скользите влево, чтобы удалить</string>
+    <string name="weather_list_item_delete">Удалить</string>
+    <string name="weather_list_title_date">Дата</string>
+    <string name="card_title_weather">Погода</string>
+    <string name="humidity">Влажность</string>
+    <string name="market_slogan">Более точная информация о погоде</string>
+    <string name="market_slogan_install">Установить</string>
+    <string name="market_slogan_open">Открыть</string>
+    <string name="update_failed">Ошибка обновления</string>
+    <string name="update_time">Обновлено</string>
+    <string name="visibility">Видимость</string>
+    <string name="weather_update">Обновление</string>
+    <string name="wind">Ветер</string>
+</resources>

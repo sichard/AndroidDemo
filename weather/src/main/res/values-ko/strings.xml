@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">날씨</string>
+	<string name="humidity">습도</string>
+	<string name="market_slogan">보다 정확한 날씨 정보</string>
+	<string name="market_slogan_install">설치</string>
+	<string name="market_slogan_open">열다</string>
+	<string name="update_failed">업그레이드 실패</string>
+	<string name="update_time">업데이트됨</string>
+	<string name="visibility">선명도</string>
+	<string name="weather_update">업데이트 중</string>
+	<string name="wind">바람</string>
+</resources>

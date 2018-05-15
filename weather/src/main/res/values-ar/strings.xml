@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">طقس</string>
+	<string name="humidity">الرطوبة</string>
+	<string name="market_slogan">معلومات أكثر دقة حول الطقس</string>
+	<string name="market_slogan_install">تثبيت</string>
+	<string name="market_slogan_open">فتح</string>
+	<string name="update_failed">فشل التحديث</string>
+	<string name="update_time">تحديث</string>
+	<string name="visibility">الظهور</string>
+	<string name="weather_update">تحديث</string>
+	<string name="wind">الرياح</string>
+</resources>

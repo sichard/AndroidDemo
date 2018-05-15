@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="time_size">14dp</dimen>
+    <dimen name="hour_size">64dp</dimen>
+    <dimen name="min_size">64dp</dimen>
+    <dimen name="weather_info_size">12sp</dimen>
+    <dimen name="weather_status_bar_height">25dp</dimen>
+    <dimen name="weather_detail_height">400dp</dimen>
+
+    <dimen name="oval_size">4dp</dimen>
+    <dimen name="weather_hour_item_width">60dp</dimen>
+    <dimen name="weather_margin_left">20dp</dimen>
+
+    <dimen name="city_item_height">40dp</dimen>
+    <dimen name="city_item_left_margin">12dp</dimen>
+    <dimen name="city_item_text_size">14sp</dimen>
+    <dimen name="weather_status">169dp</dimen>
+    <dimen name="temp_size">48sp</dimen>
+
+</resources>

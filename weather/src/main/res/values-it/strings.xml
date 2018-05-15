@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="locate_fail">Localizzazione non riuscita</string>
+	<string name="locating_tip">Localizzazione in corso...</string>
+	<string name="network_unavailable">Rete non disponibile</string>
+	<string name="search_city_empty">Nessun risultato trovato</string>
+	<string name="search_city_hint">Immetti nome della città</string>
+	<string name="weather_settings">Impostazioni di localizzazione meteo</string>
+	<string name="weather_list_delete_tip">Scorri a sinistra per eliminare</string>
+	<string name="weather_list_item_delete">Elimina</string>
+	<string name="weather_list_title_date">Data</string>
+    <string name="card_title_weather">Meteo</string>
+    <string name="humidity">Umidità</string>
+    <string name="market_slogan">Informazioni meteo più accurate</string>
+    <string name="market_slogan_install">Installa</string>
+    <string name="market_slogan_open">Apri</string>
+    <string name="update_failed">Aggiornamento non riuscito</string>
+    <string name="update_time">Aggiornato</string>
+    <string name="visibility">Visibilità</string>
+    <string name="weather_update">Aggiornamento in corso</string>
+    <string name="wind">Vento</string>
+</resources>

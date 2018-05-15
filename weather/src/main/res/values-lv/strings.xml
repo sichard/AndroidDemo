@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">Laikapstākļi</string>
+	<string name="humidity">Mitrums</string>
+	<string name="market_slogan">Precīzāka laikapstākļu informācija</string>
+	<string name="market_slogan_install">INSTALĒT</string>
+	<string name="market_slogan_open">ATVĒRT</string>
+	<string name="update_failed">Jaunināšana neizdevās</string>
+	<string name="update_time">Atjaunināts</string>
+	<string name="visibility">Redzamība</string>
+	<string name="weather_update">Notiek atjaunināšana</string>
+	<string name="wind">Vējš</string>
+</resources>

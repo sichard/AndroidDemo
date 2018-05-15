@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_weather_setting_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <!--给透明状态栏预留的高度-->
+    <View
+        android:id="@+id/status_bar_height_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/weather_status_bar_height" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/weather_setting_closed_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/ic_weather_closed_setting" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/weather_black_5" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/weather_list_delete_tip"
+        android:textColor="@color/weather_black_30"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/fixed_position"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/city_item_height"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_weather_location_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/locate_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/city_item_left_margin"
+            android:src="@drawable/ic_weather_location" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/weather_black_20" />
+
+        <TextView
+            android:id="@+id/fixed_position_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toLeftOf="@+id/refresh_locate"
+            android:layout_toRightOf="@+id/locate_icon"
+            android:layout_weight="1"
+            android:text="@string/locating_tip"
+            android:textColor="@color/weather_black_87"
+            android:textSize="@dimen/city_item_text_size" />
+    </LinearLayout>
+
+    <com.tct.launcher.weather.view.DragSlideListView
+        android:id="@+id/weather_city_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="6dp"
+        android:listSelector="@android:color/transparent">
+
+    </com.tct.launcher.weather.view.DragSlideListView>
+
+</LinearLayout>

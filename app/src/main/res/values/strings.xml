@@ -20,4 +20,6 @@
     <string name="value">value</string>
     <!--特效相关-->
     <string name="activity_path_animation">Special Effect/Path Animation</string>
+    <!--项目相关-->
+    <string name="activity_weather">Project/AccuWeather</string>
 </resources>

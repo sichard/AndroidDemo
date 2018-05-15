@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">موسم</string>
+	<string name="humidity">نمی</string>
+	<string name="market_slogan">زیادہ درست موسم کی معلومات</string>
+	<string name="market_slogan_install">انسٹال کریں</string>
+	<string name="market_slogan_open">کھولیں</string>
+	<string name="update_time">اپ ڈیٹ کیا گیا</string>
+	<string name="visibility">مرئیت</string>
+	<string name="weather_update">اپ ڈیٹ کر رہا ہے</string>
+	<string name="wind">ہوا</string>
+</resources>

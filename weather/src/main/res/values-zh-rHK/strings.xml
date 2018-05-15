@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">天氣</string>
+	<string name="humidity">濕度</string>
+	<string name="market_slogan">更多確切的天氣資訊</string>
+	<string name="market_slogan_install">安裝</string>
+	<string name="market_slogan_open">打開</string>
+	<string name="update_failed">更新失敗</string>
+	<string name="update_time">更新成功</string>
+	<string name="visibility">能見度</string>
+	<string name="weather_update">正在更新</string>
+	<string name="wind">風</string>
+</resources>

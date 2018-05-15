@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">מזג אוויר</string>
+	<string name="humidity">לחות</string>
+	<string name="market_slogan">מידע מזג אוויר מדויק נוסף</string>
+	<string name="market_slogan_install">התקן</string>
+	<string name="market_slogan_open">פתח</string>
+	<string name="update_time">עודכן</string>
+	<string name="visibility">ראות</string>
+	<string name="weather_update">מעדכן</string>
+	<string name="wind">רוח</string>
+</resources>

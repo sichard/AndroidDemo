@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">Thời tiết</string>
+	<string name="humidity">Độ ẩm</string>
+	<string name="market_slogan">Thông tin thời tiết chính xác hơn</string>
+	<string name="market_slogan_install">Cài đặt</string>
+	<string name="market_slogan_open">Mở</string>
+	<string name="update_failed">Cập nhật thất bại</string>
+	<string name="update_time">Đã cập nhật</string>
+	<string name="visibility">Hiển thị</string>
+	<string name="weather_update">Đang cập nhật</string>
+	<string name="wind">Gió</string>
+</resources>

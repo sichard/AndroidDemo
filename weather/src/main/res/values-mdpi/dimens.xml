@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="weather_status">140dp</dimen>
+    <dimen name="temp_size">42sp</dimen>
+
+</resources>

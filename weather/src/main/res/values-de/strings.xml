@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="locate_fail">Abrufen der Position fehlgeschlagen</string>
+    <string name="locating_tip">Position wird jetzt abgerufen...</string>
+    <string name="network_unavailable">Netzwerk nicht verfügbar</string>
+    <string name="search_city_empty">Keine Ergebnisse gefunden</string>
+    <string name="search_city_hint">Stadt eingeben</string>
+    <string name="weather_settings">Standorteinstellungen für das Wetter</string>
+    <string name="weather_list_delete_tip">Nach links wischen: löschen</string>
+    <string name="weather_list_item_delete">Löschen</string>
+    <string name="weather_list_title_date">Datum</string>
+    <string name="card_title_weather">Wetter</string>
+    <string name="humidity">Luftfeuch.</string>
+    <string name="market_slogan">Genauere Wetterinformationen</string>
+    <string name="market_slogan_install">Installieren</string>
+    <string name="market_slogan_open">Öffnen</string>
+    <string name="update_failed">Aktualisierung fehlgeschlagen</string>
+    <string name="update_time">Aktualisiert</string>
+    <string name="visibility">Sicht</string>
+    <string name="weather_update">Wird aktualisiert...</string>
+    <string name="wind">Wind</string>
+</resources>

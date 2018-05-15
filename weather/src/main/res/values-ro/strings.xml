@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="locate_fail">Localizare nereușită</string>
+	<string name="locating_tip">Se stabilește poziția acum...</string>
+	<string name="network_unavailable">Rețeaua nu este disponibilă</string>
+	<string name="search_city_empty">Nu a fost găsit niciun rezultat</string>
+	<string name="search_city_hint">Introduceți numele orașului</string>
+	<string name="weather_settings">Setările locului pentru informațiile meteo</string>
+	<string name="weather_list_delete_tip">Glisați în stânga pentru ștergere</string>
+	<string name="weather_list_item_delete">Ștergere</string>
+	<string name="weather_list_title_date">Data</string>
+    <string name="card_title_weather">Vremea</string>
+    <string name="humidity">Umiditate</string>
+    <string name="market_slogan">Informații meteo mai precise</string>
+    <string name="market_slogan_install">Instalaţi</string>
+    <string name="market_slogan_open">Deschidere</string>
+    <string name="update_failed">Actualizare nereușită</string>
+    <string name="update_time">Actualizare realizată</string>
+    <string name="visibility">Vizibilitate</string>
+    <string name="weather_update">Se actualizează</string>
+    <string name="wind">Vânt</string>
+</resources>

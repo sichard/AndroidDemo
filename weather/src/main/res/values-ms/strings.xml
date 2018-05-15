@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">Cuaca</string>
+	<string name="humidity">Kelembapan</string>
+	<string name="market_slogan">Maklumat cuaca yang lebih tepat</string>
+	<string name="market_slogan_install">Pasang</string>
+	<string name="market_slogan_open">Buka</string>
+	<string name="update_failed">Kemas kinian gagal</string>
+	<string name="update_time">Dikemas kini</string>
+	<string name="visibility">Keterlihatan</string>
+	<string name="weather_update">Mengemas kini</string>
+	<string name="wind">Angin</string>
+</resources>

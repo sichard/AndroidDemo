@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="clock_intent_info">
+        <item>#Intent;component=com.google.android.deskclock/com.android.deskclock.DeskClock</item>
+        <item>#Intent;component=com.android.deskclock/com.android.deskclock.DeskClock</item>
+        <item>#Intent;component=com.tct.timetool/com.tct.timetool.DeskClock</item>
+        <item>#Intent;component=com.android.deskclock/com.android.deskclock.DeskClockTabActivity</item>
+        <item>#Intent;component=com.sec.android.app.clockpackage/com.sec.android.app.clockpackage.ClockPackage</item><!-- 三星note3-->
+        <item>#Intent;component=com.android.deskclock/com.android.deskclock.AlarmsMainActivity</item><!-- 华为mate8-->
+        <item>#Intent;component=com.coloros.alarmclock/com.coloros.alarmclock.AlarmClock</item>
+        <item>#Intent;component=com.android.alarmclock/com.meizu.flyme.alarmclock.AlarmClock</item>
+        <item>#Intent;component=com.yulong.android.xtime/yulong.xtime.ui.main.XTimeActivity</item>
+        <item>#Intent;component=com.lenovo.deskclock/com.lenovo.deskclock.DeskClock</item>
+        <item>#Intent;component=com.sonyericsson.organizer/com.sonyericsson.organizer.Organizer</item>
+        <!-- <item>#Intent;action=android.intent.action.MAIN;category=android.intent.category.DESK_DOCK</item>--><!-- 三星note3 crash, 在systemUI有-->
+    </string-array>
+
+    <string-array name="calendar_intent_info">
+        <item>#Intent;component=com.google.android.calendar/com.android.calendar.AllInOneActivity</item>
+        <item>#Intent;component=com.android.calendar/com.android.calendar.AllInOneActivity</item>
+        <item>#Intent;component=com.tct.calendar/com.tct.calendar.AllInOneActivity</item>
+        <item>#Intent;component=com.htc.calendar/com.htc.calendar.CalendarActivityMain</item>
+        <item>#Intent;component=com.yulong.android.calendar/com.yulong.android.calendar.ui.base.LaunchActivity</item>
+        <item>#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_CALENDAR</item>
+    </string-array>
+
+</resources>

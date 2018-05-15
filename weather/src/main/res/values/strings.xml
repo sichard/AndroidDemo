@@ -1,0 +1,24 @@
+<resources>
+    <string name="card_title_weather">Weather</string>
+    <string name="weather_list_title_date">Date</string>
+    <string name="weather_list_item_delete">Delete</string>
+    <string name="weather_settings">Weather Location Settings</string>
+    <string name="locating_tip">Locating the position now...</string>
+    <string name="locate_fail">Locating failed</string>
+    <string name="search_city_empty">No results found</string>
+    <string name="search_city_hint">Enter city name</string>
+    <string name="network_unavailable">Network is Unavailable</string>
+    <string name="weather_list_delete_tip">Slide left to delete</string>
+
+    <string name="wind">Wind</string>
+    <string name="humidity">Humidity</string>
+    <string name="visibility">Visibility</string>
+    <string name="weather">Weather</string>
+    <string name="none">-.-</string>
+    <string name="update_time">Updated</string>
+    <string name="weather_update">Updating</string>
+    <string name="update_failed">Update failed</string>
+    <string name="market_slogan">More accurate weather information</string>
+    <string name="market_slogan_install">INSTALL</string>
+    <string name="market_slogan_open">OPEN</string>
+</resources>

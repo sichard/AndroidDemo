@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">Eguraldia</string>
+	<string name="humidity">Hezetas.</string>
+	<string name="market_slogan">Eguraldiari buruzko informazio zehatzagoa</string>
+	<string name="market_slogan_install">Instalatu</string>
+	<string name="market_slogan_open">Ireki</string>
+	<string name="update_failed">Ezin izan da eguneratu</string>
+	<string name="update_time">Eguneratuta</string>
+	<string name="visibility">Ikusgaitas.</string>
+	<string name="weather_update">Eguneratzea</string>
+	<string name="wind">Haizea</string>
+</resources>

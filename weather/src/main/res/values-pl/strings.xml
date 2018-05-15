@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">Pogoda</string>
+	<string name="humidity">Wilg.</string>
+	<string name="market_slogan">Bardziej dokładne informacje o pogodzie</string>
+	<string name="market_slogan_install">Zainstaluj</string>
+	<string name="market_slogan_open">Otwórz</string>
+	<string name="update_failed">Aktualizacja nieudana</string>
+	<string name="update_time">Zaktualizowano</string>
+	<string name="visibility">Wid.</string>
+	<string name="weather_update">Aktualizowanie</string>
+	<string name="wind">Wiatr</string>
+</resources>

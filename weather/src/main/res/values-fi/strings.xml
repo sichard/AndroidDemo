@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">Sää</string>
+	<string name="humidity">Kosteus</string>
+	<string name="market_slogan">Tarkemmat säätiedot</string>
+	<string name="market_slogan_install">Asenna</string>
+	<string name="market_slogan_open">Avaa</string>
+	<string name="update_failed">Päivitys epäonnistui</string>
+	<string name="update_time">Päivitetty</string>
+	<string name="visibility">Näkyvyys</string>
+	<string name="weather_update">Päivitetään</string>
+	<string name="wind">Tuuli</string>
+</resources>

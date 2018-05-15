@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">Orai</string>
+	<string name="humidity">Drėgmė</string>
+	<string name="market_slogan">Tikslesnė orų prognozė</string>
+	<string name="market_slogan_install">DIEGTI</string>
+	<string name="market_slogan_open">ATIDARYTI</string>
+	<string name="update_failed">Nepavyko atnaujinti</string>
+	<string name="update_time">Atnaujinta</string>
+	<string name="visibility">Matom.</string>
+	<string name="weather_update">Naujinama</string>
+	<string name="wind">Vėjas</string>
+</resources>

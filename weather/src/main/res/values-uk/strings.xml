@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">Погода</string>
+	<string name="humidity">Вологість</string>
+	<string name="market_slogan">Точніші дані про погоду</string>
+	<string name="market_slogan_install">Інсталювати</string>
+	<string name="market_slogan_open">Відкрити</string>
+	<string name="update_failed">Збій оновлення</string>
+	<string name="update_time">Оновлено</string>
+	<string name="visibility">Видимість</string>
+	<string name="weather_update">Оновлення</string>
+	<string name="wind">Вітер</string>
+</resources>

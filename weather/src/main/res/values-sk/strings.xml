@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">Počasie</string>
+	<string name="humidity">Vlhkosť</string>
+	<string name="market_slogan">Presnejšie informácie o počasí</string>
+	<string name="market_slogan_install">Inštalovať</string>
+	<string name="market_slogan_open">Otvoriť</string>
+	<string name="update_failed">Aktualizácia neúspešná</string>
+	<string name="update_time">Aktualizované</string>
+	<string name="visibility">Viditeľ.</string>
+	<string name="weather_update">Prebieha aktualizácia</string>
+	<string name="wind">Vietor</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weather_settings">การตั้งค่าตำแหน่งสภาพอากาศ</string>
+    <string name="locating_tip">กำลังระบุตำแหน่งตอนนี้...</string>
+    <string name="locate_fail">การระบุตำแหน่งล้มเหลว</string>
+    <string name="search_city_empty">ไม่พบผลลัพธ์</string>
+    <string name="search_city_hint">ป้อนชื่อเมือง</string>
+    <string name="network_unavailable">เครือข่ายไม่พร้อมใช้งาน</string>
+    <string name="weather_list_delete_tip">สไลด์ไปทางซ้ายเพื่อลบ</string>
+    <string name="weather_list_item_delete">ลบ</string>
+    <string name="weather_list_title_date">วันที่</string>
+    <string name="card_title_weather">สภาพอากาศ</string>
+    <string name="humidity">ความชื้น</string>
+    <string name="market_slogan">ข้อมูลพยากรณ์อากาศที่แม่นยำมากขึ้น</string>
+    <string name="market_slogan_install">ติดตั้ง</string>
+    <string name="market_slogan_open">เปิด</string>
+    <string name="update_failed">อัปเดตล้มเหลว</string>
+    <string name="update_time">อัปเดตแล้ว</string>
+    <string name="visibility">ทัศนวิสัย</string>
+    <string name="weather_update">กำลังอัปเดต</string>
+    <string name="wind">ลม</string>
+</resources>

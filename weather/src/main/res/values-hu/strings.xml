@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="card_title_weather">Időjárás</string>
+	<string name="humidity">Páratart.</string>
+	<string name="market_slogan">Pontosabb időjárási adatok</string>
+	<string name="market_slogan_install">Telepítés</string>
+	<string name="market_slogan_open">Megnyit</string>
+	<string name="update_failed">A frissítés sikertelen</string>
+	<string name="update_time">Frissítve</string>
+	<string name="visibility">láthatóság</string>
+	<string name="weather_update">Frissítés folyamatban</string>
+	<string name="wind">Szél</string>
+</resources>
