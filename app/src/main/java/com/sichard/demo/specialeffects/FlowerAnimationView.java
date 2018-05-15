@@ -59,7 +59,7 @@ public class FlowerAnimationView extends View implements ValueAnimator.AnimatorU
     /**
      * 资源ID
      */
-//	private int resId = R.drawable.fllower_love;
+//	private int resId = R.drawable.flower_love;
     public FlowerAnimationView(Context context) {
         super(context);
         init(context);
@@ -85,9 +85,9 @@ public class FlowerAnimationView extends View implements ValueAnimator.AnimatorU
 
         pathMeasure = new PathMeasure();
 
-        builderFollower(fllowerCount, flowers1);
-        builderFollower(fllowerCount, flowers2);
-        builderFollower(fllowerCount, flowers3);
+        builderFlower(flowerCount, flowers1);
+        builderFlower(flowerCount, flowers2);
+        builderFlower(flowerCount, flowers3);
 
     }
 
@@ -112,12 +112,12 @@ public class FlowerAnimationView extends View implements ValueAnimator.AnimatorU
     /**
      * 第一批个数
      */
-    private int fllowerCount = 4;
+    private int flowerCount = 4;
 
     /**
      * 创建花
      */
-    private void builderFollower(int count, List<Flower> flowers) {
+    private void builderFlower(int count, List<Flower> flowers) {
 
         int max = (int) (width * 3 / 4f);
         int min = (int) (width / 4f);
@@ -271,7 +271,7 @@ public class FlowerAnimationView extends View implements ValueAnimator.AnimatorU
     }
 
     /**
-     * 跟新小球的位置
+     * 更新小球的位置
      *
      * @param value
      * @param flowers

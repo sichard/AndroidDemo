@@ -1,0 +1,27 @@
+ext {
+    buildToolsVersion = '25.0.3'
+    minSdkVersion = 21
+    targetSdkVersion = 26
+    okhttp3Version = '3.10.0'
+    retrofitVersion = "2.1.0"
+    supportLibrariesVersion = '26.1.0'
+    constraintLayoutVersion = '1.1.0'
+
+    androidPlugin = 'com.android.tools.build:gradle:2.2.3'
+    dep = [
+            androidPlugin     : 'com.android.tools.build:gradle:2.2.3',
+            supportV4         : "com.android.support:support-v4:$supportLibrariesVersion",
+            supportAnnotations: "com.android.support:support-annotations:$supportLibrariesVersion",
+            recyclerView      : "com.android.support:recyclerview-v7:$supportLibrariesVersion",
+            appcompatV7       : "com.android.support:appcompat-v7:$supportLibrariesVersion",
+            design            : "com.android.support:design:$supportLibrariesVersion",
+            constraint_layout : "com.android.support.constraint:constraint-layout:$constraintLayoutVersion",
+
+            retrofit2         : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            okhttp3           : "com.squareup.okhttp3:okhttp:$okhttp3Version",
+
+            androidProcesses  : 'com.jaredrummler:android-processes:1.0.8',
+
+            junit             : 'junit:junit:4.12',
+    ]
+}

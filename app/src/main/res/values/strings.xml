@@ -3,6 +3,8 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello World!</string>
 
+    <!--Java测试activity-->
+    <string name="activity_java_test">JavaTest</string>
     <!--动画相关的activity-->
     <string name="activity_animation_base">Animation/BaseAnimation</string>
     <string name="activity_value_animation">Animation/Value Animation</string>
