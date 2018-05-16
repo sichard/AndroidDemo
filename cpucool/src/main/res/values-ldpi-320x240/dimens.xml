@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="boost_clean_value_size">50sp</dimen>
+    <dimen name="boost_text_padding_bottom">4dp</dimen>
+    <dimen name="boost_right_text_padding">2dp</dimen>
+
+    <!-- 适配内存加速-->
+    <dimen name="boost_sp_21">15sp</dimen>
+    <dimen name="boost_top_content_diff">8dp</dimen>
+</resources>

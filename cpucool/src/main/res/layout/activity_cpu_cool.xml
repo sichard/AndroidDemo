@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tcl.cpu.cooldown.CpuCoolView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_cpu_cool"
+        android:scaleType="fitXY"
+        android:src="@drawable/cpu_cool_bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="110dp"
+        android:gravity="center_horizontal"
+        android:text="@string/lscreen_cool_cooling"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="113dp"
+        android:layout_marginLeft="47dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/cpu_cool_penguin_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="-7dp"
+            android:src="@drawable/cpu_cool_penguin_shadow" />
+
+        <ImageView
+            android:id="@+id/cpu_cool_penguin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cpu_cool_penguin" />
+
+    </FrameLayout>
+
+    <com.tcl.cpu.cooldown.SnowAnimationView
+        android:id="@+id/cpu_cool_snow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</com.tcl.cpu.cooldown.CpuCoolView>
