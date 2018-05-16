@@ -1,5 +1,5 @@
 ext {
-    buildToolsVersion = '25.0.3'
+    buildToolsVersion = '26.0.2'
     minSdkVersion = 21
     targetSdkVersion = 26
     okhttp3Version = '3.10.0'
@@ -7,8 +7,12 @@ ext {
     supportLibrariesVersion = '26.1.0'
     constraintLayoutVersion = '1.1.0'
 
-    androidPlugin = 'com.android.tools.build:gradle:2.2.3'
     dep = [
+            compileSdkVersion : 26,
+            buildToolsVersion : '26.0.2',
+            targetSdkVersion  : 26,
+            minSdkVersion     : 21,
+
             androidPlugin     : 'com.android.tools.build:gradle:2.2.3',
             supportV4         : "com.android.support:support-v4:$supportLibrariesVersion",
             supportAnnotations: "com.android.support:support-annotations:$supportLibrariesVersion",

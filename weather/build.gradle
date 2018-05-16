@@ -1,13 +1,13 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "25.0.3"
+    compileSdkVersion dep.compileSdkVersion
+    buildToolsVersion dep.buildToolsVersion
 
 
     defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 26
+        minSdkVersion dep.minSdkVersion
+        targetSdkVersion dep.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -46,7 +46,7 @@ dependencies {
     implementation dep.supportV4
     //编译OkHttp模块
     implementation dep.okhttp3
-    //编译fastJson
-    compile 'com.alibaba:fastjson:1.2.14'
+    //编译fastJson(解析天气返回Json数据)
+    implementation 'com.alibaba:fastjson:1.2.14'
     compile project(path: ':common')
 }
