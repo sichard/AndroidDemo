@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tct.launcher.weather">
+    package="com.sichard.weather">
 
     <!-- 天气widget所需的定位权限 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -16,19 +16,19 @@
         android:allowBackup="true"
         android:supportsRtl="true">
         <activity
-            android:name="com.tct.launcher.weather.activity.CityActivity"
+            android:name=".activity.CityActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <activity
-            android:name="com.tct.launcher.weather.activity.WeatherCityActivity"
+            android:name=".activity.WeatherCityActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <activity
-            android:name="com.tct.launcher.weather.activity.WeatherSettingActivity"
+            android:name="activity.WeatherSettingActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
     </application>

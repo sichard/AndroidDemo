@@ -2,7 +2,7 @@ package com.sichard.demo;
 
 import android.app.Application;
 
-import com.tct.launcher.weather.WeatherWidgetManager;
+import com.sichard.weather.WeatherWidgetManager;
 
 /**
  * <br>类描述:Demo的Application实例
