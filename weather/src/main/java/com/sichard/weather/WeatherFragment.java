@@ -54,8 +54,6 @@ public class WeatherFragment extends Fragment {
     private boolean mIsReloaded = false;
     /** 是否定位城市 */
     private boolean mIsFixedPositionCity;
-    /** 是否上报过广告展示数据 */
-    private boolean mIsUploadStatisticsData;
     /** 是否获取天气数据失败 */
     private boolean mIsRequestFailed;
 

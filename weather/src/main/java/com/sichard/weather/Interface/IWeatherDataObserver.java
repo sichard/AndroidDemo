@@ -1,4 +1,4 @@
-package com.tct.launcher.weather.Interface;
+package com.sichard.weather.Interface;
 
 
 import com.sichard.weather.WeatherDataChangeEvent;

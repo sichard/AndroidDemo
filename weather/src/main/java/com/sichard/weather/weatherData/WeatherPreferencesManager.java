@@ -1,4 +1,4 @@
-package com.tct.launcher.weather.weatherData;
+package com.sichard.weather.weatherData;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -7,14 +7,15 @@ import android.content.SharedPreferences.Editor;
 import junit.framework.Assert;
 
 /**
- * @author tyler.tang
- * @date 2016/6/30
- * @project LauncherPro
+ *<br>类描述：存储类
+ *<br>详细描述：
+ *<br><b>Author sichard</b>
+ *<br><b>Date 18-5-17</b>
  */
 public class WeatherPreferencesManager {
 
     /** 桌面 Preference配置文件名称 */
-    public static final String DEFAULT_PREFERENCE_NAME = "com.tct.launcher.weather";
+    public static final String DEFAULT_PREFERENCE_NAME = "com.sichard.weather";
     /** preference配置对象 */
     private SharedPreferences mPreference = null;
     /** Editor */

@@ -81,7 +81,7 @@
             android:textSize="@dimen/city_item_text_size" />
     </LinearLayout>
 
-    <com.tct.launcher.weather.view.DragSlideListView
+    <com.sichard.weather.view.DragSlideListView
         android:id="@+id/weather_city_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -90,6 +90,6 @@
         android:dividerHeight="6dp"
         android:listSelector="@android:color/transparent">
 
-    </com.tct.launcher.weather.view.DragSlideListView>
+    </com.sichard.weather.view.DragSlideListView>
 
 </LinearLayout>

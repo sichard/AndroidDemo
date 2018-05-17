@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.tct.launcher.weather.view.SlideItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.sichard.weather.view.SlideItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="40dp"
     android:orientation="horizontal">
@@ -52,4 +52,4 @@
             android:text="@string/weather_list_item_delete" />
     </LinearLayout>
 
-</com.tct.launcher.weather.view.SlideItemLayout>
+</com.sichard.weather.view.SlideItemLayout>

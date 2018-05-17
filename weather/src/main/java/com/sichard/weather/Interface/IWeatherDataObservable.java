@@ -19,7 +19,7 @@ public interface IWeatherDataObservable {
      *
      * @param observer
      */
-    public void register(com.tct.launcher.weather.Interface.IWeatherDataObserver observer);
+    public void register(IWeatherDataObserver observer);
 
     /**
      * <br>功能简述:注销一个数据变更观察者
@@ -28,7 +28,7 @@ public interface IWeatherDataObservable {
      *
      * @param observer
      */
-    public void unregister(com.tct.launcher.weather.Interface.IWeatherDataObserver observer);
+    public void unregister(IWeatherDataObserver observer);
 
     /**
      * <br>功能简述:通知所有数据观察者数据发生了变更

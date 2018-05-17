@@ -7,10 +7,10 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.sichard.weather.Interface.IWeatherDataObservable;
+import com.sichard.weather.Interface.IWeatherDataObserver;
 import com.sichard.weather.weatherData.LocationEntity;
 import com.sichard.weather.weatherData.WeatherDataEntity;
-import com.tct.launcher.weather.Interface.IWeatherDataObserver;
-import com.tct.launcher.weather.weatherData.WeatherPreferencesManager;
+import com.sichard.weather.weatherData.WeatherPreferencesManager;
 
 import java.util.ArrayList;
 import java.util.List;

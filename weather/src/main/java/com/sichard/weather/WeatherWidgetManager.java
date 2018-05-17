@@ -7,6 +7,7 @@ import android.os.Looper;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.sichard.weather.Interface.IWeatherDataObserver;
 import com.sichard.weather.Interface.OnLocationChangedListener;
 import com.sichard.weather.utils.DeviceUtil;
 import com.sichard.weather.utils.TimeConstant;
@@ -15,8 +16,7 @@ import com.sichard.weather.weatherData.ForecastDailyEntity;
 import com.sichard.weather.weatherData.ForecastHourlyEntity;
 import com.sichard.weather.weatherData.LocationEntity;
 import com.sichard.weather.weatherData.WeatherDataEntity;
-import com.tct.launcher.weather.Interface.IWeatherDataObserver;
-import com.tct.launcher.weather.weatherData.WeatherPreferencesManager;
+import com.sichard.weather.weatherData.WeatherPreferencesManager;
 
 import java.util.ArrayList;
 import java.util.List;

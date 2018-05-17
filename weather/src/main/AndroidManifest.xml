@@ -28,7 +28,7 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <activity
-            android:name="activity.WeatherSettingActivity"
+            android:name=".activity.WeatherSettingActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
     </application>

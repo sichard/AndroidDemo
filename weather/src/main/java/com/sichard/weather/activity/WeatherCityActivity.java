@@ -13,13 +13,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.sichard.weather.Interface.IWeatherDataObserver;
 import com.sichard.weather.R;
 import com.sichard.weather.WeatherDataChangeEvent;
 import com.sichard.weather.WeatherDataManager;
 import com.sichard.weather.WeatherFragment;
 import com.sichard.weather.adapter.WeatherCityAdapter;
 import com.sichard.weather.weatherData.WeatherDataEntity;
-import com.tct.launcher.weather.Interface.IWeatherDataObserver;
 
 import java.util.ArrayList;
 import java.util.List;

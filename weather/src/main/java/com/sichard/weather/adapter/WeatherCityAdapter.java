@@ -100,7 +100,7 @@ public class WeatherCityAdapter extends FragmentStatePagerAdapter {
     }
 
     /**
-     * 当{@link com.tct.launcher.weather.activity.WeatherSettingActivity}界面拖动改变位置时调用，更新详情界面的列表
+     * 当{@link com.sichard.weather.activity.WeatherSettingActivity}界面拖动改变位置时调用，更新详情界面的列表
      * @param fragmentList
      */
     public void updateFragmentList(List<WeatherFragment> fragmentList) {
