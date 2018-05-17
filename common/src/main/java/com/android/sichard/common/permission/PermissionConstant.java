@@ -1,10 +1,10 @@
 package com.android.sichard.common.permission;
 
 /**
- * @author htoall
- * @Description: 申请权限对应的识别码
- * @date 2016/10/19 下午3:14
- * @copyright TCL-MIE
+ *<br>类描述：申请权限对应的识别码
+ *<br>详细描述：
+ *<br><b>Author sichard</b>
+ *<br><b>Date 18-5-16</b>
  */
 public class PermissionConstant {
     public static final int PERMISSION_ALL = 1;

@@ -15,11 +15,11 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author htoall
- * @Description: 权限申请助手类
+ *<br>类描述：权限申请助手类
  * 申请权限的Activity类需要重载onRequestPermissionsResult方法，并调用permissonResult方法,其中requestCode参数作为newInstance参数
- * @date 2016/10/19 下午1:38
- * @copyright TCL-MIE
+ *<br>详细描述：
+ *<br><b>Author sichard</b>
+ *<br><b>Date 18-5-16</b>
  */
 @TargetApi(Build.VERSION_CODES.M)
 public class PermissionAssist {
