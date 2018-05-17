@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="boost_top_content_diff">14dp</dimen>
+    <dimen name="boost_clean_value_size">60sp</dimen>
+    <dimen name="boost_margin_micro">4dp</dimen>
+    <dimen name="boost_text_padding_bottom">12dp</dimen>
+    <dimen name="boost_sp_21">21sp</dimen>
+    <dimen name="boost_state_scale_btn_lay_default_height">63dp</dimen>
+    <dimen name="boost_listview_fade_length">4dp</dimen>
+    <dimen name="battery_clean_view_marigin_top">108dp</dimen>
+    <dimen name="battery_clean_view_size">253dp</dimen>
+    <dimen name="battery_clean_progress">80sp</dimen>
+    <dimen name="battery_clean_percent">40sp</dimen>
+    <dimen name="battery_optimize_margin">76dp</dimen>
+</resources>

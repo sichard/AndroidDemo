@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="boost_white_54">#89ffffff</color>
+    <color name="boost_white_87">#DEFFFFFF</color>
+    <color name="boost_state_scale_btn_lay_default_end">#FFFFFFFF</color>
+    <color name="boost_main_title_color">#404660</color>
+</resources>

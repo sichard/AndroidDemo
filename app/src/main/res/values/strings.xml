@@ -23,4 +23,5 @@
     <!--项目相关-->
     <string name="activity_weather">Project/AccuWeather</string>
     <string name="activity_cpu_cool">Project/CPU Cool</string>
+    <string name="activity_batter_saver">Project/BatterSaver</string>
 </resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="battery_clean_view_marigin_top">81dp</dimen>
+    <dimen name="battery_clean_view_size">190dp</dimen>
+    <dimen name="battery_clean_progress">60sp</dimen>
+    <dimen name="battery_clean_percent">30sp</dimen>
+    <dimen name="battery_optimize_margin">57dp</dimen>
+</resources>

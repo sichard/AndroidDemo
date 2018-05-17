@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.sichard.battersaver.BatterySaverView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/battery_saver_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_battery_saver"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/battery_clean_view_marigin_top"
+        android:clipChildren="false">
+
+        <com.android.sichard.battersaver.BatterySaverCleanView
+            android:id="@+id/battery_saver_clean_view"
+            android:layout_width="@dimen/battery_clean_view_size"
+            android:layout_height="@dimen/battery_clean_view_size"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/battery_saver_progress_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/battery_saver_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/battery_clean_progress" />
+
+            <TextView
+                android:id="@+id/battery_saver_progress_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/battery_clean_percent" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/battery_optimize_margin"
+        android:text="@string/clean_optimizing"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/battery_saver_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp" />
+    </LinearLayout>
+
+</com.android.sichard.battersaver.BatterySaverView>
