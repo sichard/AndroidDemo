@@ -23,6 +23,8 @@ import android.widget.ProgressBar;
 import com.android.sichard.search.R;
 import com.android.sichard.search.utils.DeviceUtil;
 
+import java.net.URISyntaxException;
+
 
 /**
  *<br>类描述：搜索WebView
@@ -119,6 +121,7 @@ public class SearchWebView extends FrameLayout {
 //					return true;
 //				}
 //
+				if (parseUrl(url)) return true;
 				view.getSettings().setBlockNetworkImage(true);
 				mLoadProgressBar.setVisibility(View.VISIBLE);
 				// 载入网页
@@ -130,6 +133,9 @@ public class SearchWebView extends FrameLayout {
 			public void onPageStarted(WebView view, String url, Bitmap favicon) {
 				super.onPageStarted(view, url, favicon);
 				mIsRequestFailed = false;
+				if (!DeviceUtil.isNetworkOK(mContext)) {
+					onBackPressed();
+				}
 			}
 
 			@Override
@@ -190,6 +196,58 @@ public class SearchWebView extends FrameLayout {
 		});
 	}
 
+	/**
+	 * 解析URL是否有action(比如启动GP,拨号等等)
+	 * @param url 要解析的url
+	 * @return
+	 */
+	private boolean parseUrl(String url) {
+		// 解析Uri的Intent,从WebView跳转到GP.
+		if (url.startsWith("intent://")) {
+			Intent intent;
+			try {
+				intent = Intent.parseUri(url, Intent.URI_INTENT_SCHEME);
+				// forbid launching activities without BROWSABLE
+				// category
+				intent.addCategory("android.intent.category.BROWSABLE");
+				// forbid explicit call
+				intent.setComponent(null);
+				// forbid intent with selector intent
+				intent.setSelector(null);
+				// start the activity by the intent
+				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				mContext.startActivity(intent);
+			} catch (URISyntaxException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return true;
+		} else if (url.startsWith("tel:") // 直接拨号的处理
+				|| url.startsWith("mailto:") // 邮件的处理
+				|| url.startsWith("sms:") || url.startsWith("smsto:") || url.startsWith("mms:") || url.startsWith("mmsto:") //短信的处理
+				|| url.startsWith(WebView.SCHEME_GEO) //地图跳转的处理
+				) {
+			try {
+				Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				mContext.startActivity(intent);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			return true;
+		} else if (url.startsWith("baiduboxlite://") || url.startsWith("baiduboxapp://")) {//deeplink的链接处理
+			try {
+				Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				mContext.startActivity(intent);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			return true;
+		}
+		return false;
+	}
+
 	@Override
 	public boolean dispatchTouchEvent(MotionEvent ev) {
 		// 如果点击位置在margin之上，则不处理点击事件，交给SearchAppLayer处理
@@ -221,7 +279,7 @@ public class SearchWebView extends FrameLayout {
 	 * @return
 	 */
 	private String checkUrl(String url) {
-		if (!url.contains("http")) {
+		if (!url.contains("http") && !url.contains("https")) {
 			url = "http://" + url;
 		}
 		return url;
@@ -232,6 +290,7 @@ public class SearchWebView extends FrameLayout {
 		final ViewParent parent = getParent();
 		final SearchView searchView = (SearchView) parent;
 		searchView.updateSearchResult(mIsRequestFailed);
+		removeWebView();
 		return true;
 	}
 

@@ -373,6 +373,12 @@ public class SearchView extends LinearLayout
             }
             mSearchWebView.setVisibility(GONE);
         }
+        if (mSearchResultView != null && mSearchResultView.getVisibility() == GONE) {
+            mSearchResultView.setVisibility(VISIBLE);
+        }
+        if (mSearchNoneContent != null) {
+            mSearchNoneContent.setVisibility(GONE);
+        }
     }
 
     public void showWebSearch() {
@@ -400,8 +406,14 @@ public class SearchView extends LinearLayout
      * @param isRequestFailed true，网络访问成功；false，有网络但网络请求失败(比如国内不翻墙访问谷歌)
      */
     public void updateSearchResult(boolean isRequestFailed) {
-        if (DeviceUtil.isNetworkOK(mContext) && !isRequestFailed) {
-            updateSearchResult();
+        if (DeviceUtil.isNetworkOK(mContext)) {
+            if (isRequestFailed) {
+                mSearchNoneContent.setVisibility(VISIBLE);
+                mSearchNoneContent.setText(getResources().getString(R.string.search_web_failed));
+                mSearchResultView.setVisibility(GONE);
+            } else {
+                updateSearchResult();
+            }
         } else {
             mSearchNoneContent.setVisibility(VISIBLE);
             mSearchNoneContent.setText(getResources().getString(R.string.search_net_not_available));

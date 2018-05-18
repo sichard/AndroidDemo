@@ -44,5 +44,6 @@
     <string name="hot_game_solitaire_classic">Solitaire</string>
     <string name="hot_game_hop_dont_stop">Hop</string>
     <string name="hot_game_shards">Shards</string>
+    <string name="search_web_failed">Web loading failed!</string>
 
 </resources>
