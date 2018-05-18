@@ -28,8 +28,6 @@ import com.android.sichard.search.common.SearchEngineHelper;
 import com.android.sichard.search.contact.ContactProvider;
 import com.android.sichard.search.data.App.AppInfo;
 import com.android.sichard.search.data.PreferencesManager;
-import com.android.sichard.search.data.appcenter.AppCenterInfo;
-import com.android.sichard.search.data.appcenter.AppCenterUtil;
 import com.android.sichard.search.data.contact.ContactInfo;
 import com.android.sichard.search.data.contact.ContactPhotoCache;
 import com.android.sichard.search.data.hotSite.HotSiteList;
@@ -295,11 +293,6 @@ public class SearchView extends LinearLayout
                     }
                 });
                 mSearchAdapter.setSearchInWeb(searchInWebInfo);
-
-                AppCenterInfo appCenterInfo = AppCenterUtil.getAppCenterInfo(getContext(), s.toString());
-                if (appCenterInfo != null) {
-                    mSearchAdapter.setAppCenterList(appCenterInfo);
-                }
 
                 // 重新设置一次adapter，mSearchResultView才会重新调用onLayout，进而调用app列表的onLayout
                 mSearchResultView.setAdapter(mSearchAdapter);

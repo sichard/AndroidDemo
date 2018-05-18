@@ -16,8 +16,6 @@ import com.android.sichard.search.data.App.IAppIml;
 import com.android.sichard.search.data.App.MoreAppItem;
 import com.android.sichard.search.data.DivideInfo;
 import com.android.sichard.search.data.ISearchItem;
-import com.android.sichard.search.data.appcenter.AppCenterInfo;
-import com.android.sichard.search.data.appcenter.IAppCenterIml;
 import com.android.sichard.search.data.contact.ContactInfo;
 import com.android.sichard.search.data.contact.ContactPhotoCache;
 import com.android.sichard.search.data.contact.ContactTitle;
@@ -31,7 +29,6 @@ import com.android.sichard.search.data.message.MessageTitle;
 import com.android.sichard.search.data.message.MoreMessageItem;
 import com.android.sichard.search.data.searchInWeb.ISearhInWebIml;
 import com.android.sichard.search.data.searchInWeb.SearchInWebInfo;
-import com.android.sichard.search.view.SearchAppCenterItemView;
 import com.android.sichard.search.view.SearchAppView;
 import com.android.sichard.search.view.SearchContactItemView;
 import com.android.sichard.search.view.SearchInWebItemView;
@@ -238,22 +235,6 @@ public class SearchAdapter extends BaseAdapter {
                             updateMessageList();
                         }
                     });
-                    break;
-            }
-        } else if (item instanceof IAppCenterIml) {
-            switch (((IAppCenterIml) item).mType) {
-                case ISearchItem.TYPE_TITLE:
-                    itemView = mInflater.inflate(R.layout.search_title, parent, false);
-                    final TextView title = (TextView) itemView.findViewById(R.id.title);
-                    title.setText(R.string.search_title_apps);
-                    break;
-                case ISearchItem.TYPE_ITEM:
-                    SearchAppCenterItemView appCenterItemView = (SearchAppCenterItemView) mInflater.inflate(R.layout.search_appcenter_item, parent, false);
-                    AppCenterInfo appCenterInfo = (AppCenterInfo) item;
-                    appCenterItemView.setAppCenterInfo(appCenterInfo);
-                    ImageView appCenterIcon = (ImageView) appCenterItemView.findViewById(R.id.search_appcenter_item_head);
-                    appCenterIcon.setImageResource(R.drawable.ic_search_in_apps);
-                    itemView = appCenterItemView;
                     break;
             }
         } else if (item instanceof ISearhInWebIml) {
@@ -634,14 +615,6 @@ public class SearchAdapter extends BaseAdapter {
         messageTitle.mState = ISearchItem.STATE_LESS;
 
         notifyDataSetChanged();
-    }
-
-    public void setAppCenterList(AppCenterInfo appCenterInfo) {
-
-        // 添加标题
-//        mList.add(new AppCenterTitle());
-        // Appcenter项
-        mList.add(appCenterInfo);
     }
 
     public void setSearchInWeb(SearchInWebInfo searchInWebInfo) {
