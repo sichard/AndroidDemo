@@ -30,4 +30,5 @@ dependencies {
     implementation project(':weather')
     implementation project(':cpucool')
     implementation project(':battersaver')
+    implementation project(':search')
 }

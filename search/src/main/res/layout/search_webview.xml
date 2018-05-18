@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tcl.launcherpro.search.view.SearchWebView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00F0F0F0"
+    android:clickable="true"
+    android:focusable="true"
+    android:visibility="gone">
+
+    <FrameLayout
+        android:id="@+id/web_view_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp">
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/load_progressbar"
+        style="@style/LoadPageProgressBarStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:visibility="visible" />
+
+</com.tcl.launcherpro.search.view.SearchWebView>

@@ -3,6 +3,7 @@ package com.sichard.demo;
 import android.app.Application;
 
 import com.sichard.weather.WeatherWidgetManager;
+import com.tcl.launcherpro.search.SearchSDK;
 
 /**
  * <br>类描述:Demo的Application实例
@@ -15,5 +16,6 @@ public class DemoApplication extends Application {
     public void onCreate() {
         super.onCreate();
         WeatherWidgetManager.init(this);
+        SearchSDK.init(getApplicationContext(), true);
     }
 }

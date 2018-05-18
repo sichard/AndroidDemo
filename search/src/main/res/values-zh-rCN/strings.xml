@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--搜索widget-->
+    <string name="search_widget_hint">搜索 应用、联系人、短信</string>
+    <string name="search_title_contacts">联系人</string>
+    <string name="search_title_apps">应用</string>
+    <string name="search_title_message">短信</string>
+    <string name="search_none_content">没有搜到相关内容</string>
+    <string name="search_engine_select">选择搜索引擎</string>
+    <string name="search_engine_google">谷歌</string>
+    <string name="search_engine_baidu">百度</string>
+    <string name="search_engine_bing">必应</string>
+    <string name="search_engine_yandex">Yandex</string>
+    <string name="search_result">搜索结果</string>
+    <string name="search_setting">搜索设置</string>
+    <string name="search_permission_hint">需要"读取联系人"权限</string>
+    <string name="search_net_not_available">当前网络不可用，请检查你的网络设置!</string>
+    <string name="search_more_result">还有%1$s个结果</string>
+    <string name="search_recent">最近</string>
+    <string name="setting_item_auto_feedback">意见反馈</string>
+    <string name="search_more">更多</string>
+    <string name="search_less">收起</string>
+    <string name="search_in_web_item_content">在网页中搜索</string>
+    <string name="search_appcenter_item_content">在应用中搜索</string>
+    <string name="hot_site_title">热门网址</string>
+    <string name="hot_game_title">热门游戏</string>
+</resources>

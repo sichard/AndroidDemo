@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+    <!--搜索widget-->
+    <string name="search_widget_hint">Cari aplikasi,Kontak,pesan</string>
+    <string name="search_title_contacts">Kontak</string>
+    <string name="search_title_apps">Aplikasi</string>
+    <string name="search_none_content">Tidak ada konten terkait!</string>
+    <string name="search_engine_select">Pilih mesin pencari</string>
+    <string name="search_engine_google">Google</string>
+    <string name="search_engine_baidu">Baidu</string>
+    <string name="search_engine_bing">Bing</string>
+    <string name="search_engine_yandex">Yandex</string>
+    <string name="search_result">Hasil pencarian</string>
+    <string name="search_setting">Pengaturan pencarian</string>
+    <string name="search_permission_hint">Izin untuk &quot;Membaca kontak&quot; diperlukan</string>
+    <string name="search_net_not_available">Jaringan tidak tersedia, Periksa jaingan</string>
+    <string name="search_recent">Baru</string>
+    <string name="search_more_result">%1$s lebih banyak Hasil</string>
+    <string name="setting_item_auto_feedback">Saran &amp; Masukan</string>
+    <string name="search_more">Selengkapnya</string>
+    <string name="search_title_message">pesan</string>
+    <string name="search_less">Lebih sedikit</string>
+    <string name="search_in_web_item_content">Cari di Web</string>
+    <string name="search_appcenter_item_content">Cari di Apps</string>
+    <string name="hot_site_title">Hot URL</string>
+</resources>

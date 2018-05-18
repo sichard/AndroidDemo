@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+    <!--搜索widget-->
+    <string name="search_widget_hint">ค้นหาแอป,รายชื่อ,ข้อความ</string>
+    <string name="search_title_contacts">รายชื่อ</string>
+    <string name="search_title_apps">แอป</string>
+    <string name="search_none_content">ไม่มีเนื้อหาที่เกี่ยวข้อง!</string>
+    <string name="search_engine_select">เลือกเครื่องมือค้นหา</string>
+    <string name="search_engine_google">Google</string>
+    <string name="search_engine_baidu">Baidu</string>
+    <string name="search_engine_bing">Bing</string>
+    <string name="search_engine_yandex">Yandex</string>
+    <string name="search_result">ผลลัพธ์การค้นหา</string>
+    <string name="search_setting">การตั้งค่าการค้นหา</string>
+    <string name="search_permission_hint">ต้องได้รับการอนุญาตสำหรับ “อ่านรายชื่อ”</string>
+    <string name="search_net_not_available">เครือข่ายไม่พร้อมใช้งาน โปรดตรวจสอบเครือข่าย</string>
+    <string name="search_recent">เร็ว ๆ นี้</string>
+    <string name="search_more_result">%1$s ผลลัพธ์เพิ่มเติม</string>
+    <string name="setting_item_auto_feedback">ข้อเสนอแนะ</string>
+    <string name="search_more">อื่น ๆ</string>
+    <string name="search_title_message">ข้อความ</string>
+    <string name="search_less">แสดงน้อยลง</string>
+    <string name="search_in_web_item_content">ค้นหาในเว็บ</string>
+    <string name="search_appcenter_item_content">ค้นหาใน Apps</string>
+    <string name="hot_site_title">URL ยอดนิยม</string>
+</resources>

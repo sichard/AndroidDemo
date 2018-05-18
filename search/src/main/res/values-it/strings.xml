@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="search_none_content">Nessun contenuto correlato.</string>
+	<string name="search_engine_select">Scegli motore di ricerca</string>
+	<string name="search_net_not_available">Rete non disponibile. Controllare la rete</string>
+	<string name="search_permission_hint">Autorizzazione &quot;Lettura contatti&quot; richiesta</string>
+	<string name="search_result">Risultati ricerca</string>
+	<string name="search_setting">Impostazioni ricerca</string>
+	<string name="search_title_apps">Applicazioni</string>
+	<string name="search_title_contacts">Contatti</string>
+	<string name="search_widget_hint">Cerca</string>
+	<string name="setting_item_auto_feedback">Feedback</string>
+	<string name="search_more">Altro</string>
+	<string name="search_recent">Recenti</string>
+	<string name="search_more_result">%1$s altri risultati</string>
+	<string name="search_title_message">Messaggi</string>
+
+	<string name="search_less">Meno</string>
+	<string name="search_in_web_item_content">Cerca nel Web</string>
+	<string name="search_appcenter_item_content">Cerca in Apps</string>
+    <string name="hot_site_title">URL più popolari</string>
+</resources>

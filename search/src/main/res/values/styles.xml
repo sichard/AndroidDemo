@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="setting_switch_style1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:checked">true</item>
+        <item name="android:thumb">@drawable/search_switch_thumb</item>
+        <item name="android:track">@drawable/search_switch_track</item>
+        <item name="android:switchMinWidth">14dp</item>
+        <item name="android:textOff">""</item>
+        <item name="android:textOn">""</item>
+    </style>
+
+    <style name="TitleTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- API 14 theme customizations can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+    </style>
+
+    <!--搜索WebView进度条的style-->
+    <style name="LoadPageProgressBarStyle">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/search_load_webpage_progress_style</item>
+        <item name="android:minHeight">2dp</item>
+        <item name="android:maxHeight">2dp</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="setting_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">@dimen/settings_item_padding</item>
+        <item name="android:paddingRight">@dimen/settings_item_padding</item>
+    </style>
+
+
+    <style name="setting_main_layout" parent="@style/setting_item">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/llayout_background</item>
+        <item name="android:layout_height">@dimen/settings_main_layout_height</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="setting_icon">
+        <item name="android:layout_width">@dimen/setting_icon_size</item>
+        <item name="android:layout_height">@dimen/setting_icon_size</item>
+        <item name="android:layout_marginRight">@dimen/setting_icon_marginright</item>
+    </style>
+
+    <style name="setting_item_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/settings_title_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/font_mid</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black_87</item>
+    </style>
+
+    <style name="setting_item_text_gray" parent="setting_item_text">
+        <item name="android:textColor">@color/black_87</item>
+    </style>
+
+</resources>

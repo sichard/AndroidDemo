@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="search_engine_select">Выберите поисковую систему</string>
+	<string name="search_none_content">Нет соответствующего содержания</string>
+	<string name="search_net_not_available">Сеть недоступна, проверьте настройки сети</string>
+	<string name="search_permission_hint">Требуется разрешение на &quot;Чтение контактов</string>
+	<string name="search_result">Результаты поиска</string>
+	<string name="search_setting">Настройки поиска</string>
+	<string name="search_title_apps">Приложения</string>
+	<string name="search_title_contacts">Контакты</string>
+	<string name="search_widget_hint">Поиск приложений,Контакты,Сообщения</string>
+	<string name="search_recent">Недавнее</string>
+	<string name="search_more_result">Еще %1$s результата(ов)</string>
+	<string name="setting_item_auto_feedback">Отзыв</string>
+	<string name="search_more">Подробнее</string>
+	<string name="search_title_message">Сообщения</string>
+	<string name="search_less">Меньше</string>
+	<string name="search_in_web_item_content">Поиск в Интернете</string>
+	<string name="search_appcenter_item_content">Поиск в Apps</string>
+    <string name="hot_site_title">Популярные веб-сайты</string>
+</resources>

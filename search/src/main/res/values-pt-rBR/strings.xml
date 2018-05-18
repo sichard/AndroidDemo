@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="search_widget_hint">Pesquisar aplicativos,Contatos,Mensagens</string>
+	<string name="search_title_apps">Aplicativos</string>
+	<string name="search_title_contacts">Contatos</string>
+	<string name="search_none_content">Nenhum conteúdo relacionado!</string>
+	<string name="search_engine_select">Escolher mecanismo de pesquisa</string>
+	<string name="search_result">Resultados da pesquisa</string>
+	<string name="search_setting">Configurações de pesquisa</string>
+	<string name="search_net_not_available">Rede indisponível, verificar rede</string>
+	<string name="search_permission_hint">Autorização para “Ler contatos” necessária</string>
+	<string name="search_recent">Recentes</string>
+	<string name="search_more_result">%1$s outros resultados</string>
+	<string name="setting_item_auto_feedback">Comentários</string>
+	<string name="search_more">Mais</string>
+	<string name="search_title_message">Mensagens</string>
+	<string name="search_less">Menos</string>
+	<string name="search_in_web_item_content">Pesquisa na Internet</string>
+	<string name="search_appcenter_item_content">Pesquisar em Apps</string>
+	<string name="hot_site_title">URL de atalho</string>
+</resources>

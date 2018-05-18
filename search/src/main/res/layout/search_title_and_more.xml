@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/search_item_title_height"
+    android:background="@android:color/white"
+    android:clickable="false">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:layout_marginLeft="@dimen/search_contact_item_image_padding_left"
+        android:text="@string/search_recent"
+        android:textColor="@color/common_black_54"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/search_contact_item_image_padding_left"
+        android:text="@string/search_more"
+        android:textColor="@color/common_black_54"
+        android:textSize="14dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/less"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/search_contact_item_image_padding_left"
+        android:text="@string/search_less"
+        android:textColor="@color/common_black_54"
+        android:textSize="14dp"
+        android:visibility="gone" />
+
+</FrameLayout>

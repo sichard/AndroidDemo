@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_search_contact_upper_half"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/search_head_height"
+        android:text="@string/search_title_apps"
+        android:textColor="@color/search_title"
+        android:layout_marginLeft="@dimen/search_contact_item_image_padding_left"
+        android:layout_marginTop="@dimen/search_title_padding_top"
+        android:textSize="13dp" />
+
+</LinearLayout>

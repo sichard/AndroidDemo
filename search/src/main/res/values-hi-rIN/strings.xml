@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<!--搜索widget-->
+	<string name="search_widget_hint">ऐप्‍स खोजें,संपर्क,संदेश</string>
+	<string name="search_title_contacts">संपर्क करें</string>
+	<string name="search_title_apps">ऐप्स</string>
+	<string name="search_none_content">कोई भी संबंधित सामग्री नहीं</string>
+	<string name="search_engine_select">सर्च इंजन चुनें</string>
+	<string name="search_engine_google">Google</string>
+	<string name="search_engine_baidu">Baidu</string>
+	<string name="search_engine_bing">Bing</string>
+	<string name="search_engine_yandex">Yandex</string>
+	<string name="search_result">खोज परिणाम</string>
+	<string name="search_setting">खोज सेटिंग</string>
+	<string name="search_permission_hint">संपर्क पढ़ें के लिए अनुमति की आवश्यकता है</string>
+	<string name="search_net_not_available">नेटवर्क अनुपलब्‍ध है, नेटवर्क जांचें</string>
+	<string name="search_recent">हालिया</string>
+	<string name="search_more_result">%1$s अधिक परिणाम</string>
+	<string name="setting_item_auto_feedback">प्रतिक्रिया</string>
+	<string name="search_more">अधिक</string>
+	<string name="search_title_message">संदेश</string>
+	<string name="search_less">कम</string>
+	<string name="search_in_web_item_content">वेब में खोजें</string>
+	<string name="search_appcenter_item_content">Apps में खोजें</string>
+    <string name="hot_site_title">हॉट URL</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="search_widget_color">#5677FC</color>
+    <color name="search_bg">#F3F4F5</color>
+    <color name="search_entity_bg">#FFFFFFFF</color>
+    <color name="search_title">#bdbdbd</color>
+    <color name="search_divide">#F3F4F5</color>
+    <color name="search_text">#212121</color>
+    <color name="search_cursor">#212121</color>
+    <color name="search_setting_engine_text">#212121</color>
+    <color name="search_message_data">#aaaaaa</color>
+    <color name="search_go_web_text_nomal">#808080</color>
+    <color name="search_go_web_text_select">#03a9f4</color>
+
+    <!--搜索设置界面-->
+    <color name="background">#FFF5F5F5</color>
+    <color name="primary">#FF5677FC</color>
+    <color name="title_color">#FFFFFF</color>
+    <color name="black_12">#1f000000</color>
+    <color name="black_54">#808080</color>
+    <color name="black_87">#DE000000</color>
+    <color name="primary_dark">#445FC9</color>
+
+    <!--通用黑色透明颜色-->
+    <color name="common_black_5">#0d000000</color>
+    <color name="common_black_20">#33000000</color>
+    <color name="common_black_30">#4c000000</color>
+    <color name="common_black_54">#89000000</color>
+    <color name="common_black_87">#DE000000</color>
+</resources>

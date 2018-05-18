@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="search_widget_hint">Buscar aplicaciones,Contactos,Mensajes</string>
+	<string name="search_title_contacts">Contactos</string>
+	<string name="search_title_apps">Aplicaciones</string>
+	<string name="search_none_content">No hay contenido relacionado</string>
+	<string name="search_engine_select">Elegir motor de búsqueda</string>
+	<string name="search_result">Resultados de búsqueda</string>
+	<string name="search_setting">Configuración de búsqueda</string>
+	<string name="search_permission_hint">Se requiere permiso para \"Leer contactos\"</string>
+	<string name="search_net_not_available">Red no disponible. Compruebe la red.</string>
+	<string name="search_recent">Reciente</string>
+	<string name="search_more_result">%1$s Resultados más</string>
+	<string name="setting_item_auto_feedback">Comentarios</string>
+	<string name="search_more">Más</string>
+	<string name="search_title_message">Mensajes</string>
+	<string name="search_less">Menos</string>
+	<string name="search_in_web_item_content">Poišči v spletu</string>
+	<string name="search_appcenter_item_content">Buscar en Apps</string>
+    <string name="hot_site_title">URL destacada</string>
+</resources>

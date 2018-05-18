@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--图标大小-->
+    <dimen name="app_icon_size">56dp</dimen>
+    <dimen name="search_app_item_view_width">68dp</dimen>
+    <dimen name="search_app_item_view_height">74dp</dimen>
+    <!--搜索-->
+    <dimen name="search_layout_height">80dip</dimen>
+    <dimen name="search_head_height">17dip</dimen>
+    <dimen name="search_distance">10dip</dimen>
+    <dimen name="search_title_padding_top">14dip</dimen>
+    <dimen name="search_more_padding_buttom">6dip</dimen>
+
+    <dimen name="search_contact_item_height">50dip</dimen>
+    <dimen name="search_contact_item_image_height">38dip</dimen>
+    <dimen name="search_contact_item_image_padding_left">20dip</dimen>
+    <dimen name="search_contact_item_image_title_gap">8dip</dimen>
+    <dimen name="search_contact_item_image_title_gap_left">16dip</dimen>
+    <dimen name="search_message_item_height">72.3dip</dimen>
+    <dimen name="search_setting_item_height">50dip</dimen>
+
+    <dimen name="search_nomal_item_height">50dip</dimen>
+
+    <!--搜索设置界面-->
+    <dimen name="activity_title_height">56dp</dimen>
+    <dimen name="font_big">20dp</dimen>
+    <dimen name="title_shadow_height">6dp</dimen>
+    <dimen name="settings_top_padding">4dp</dimen>
+    <dimen name="settings_engine_padding">16dp</dimen>
+    <dimen name="settings_item_padding">16dp</dimen>
+    <dimen name="settings_main_layout_height">56dp</dimen>
+    <dimen name="setting_icon_size">24dp</dimen>
+    <dimen name="setting_icon_marginright">32dp</dimen>
+    <dimen name="settings_title_height">56dp</dimen>
+    <dimen name="font_mid">14sp</dimen>
+    <dimen name="settings_item_title">16dp</dimen>
+
+    <dimen name="search_item_title_height">40dp</dimen>
+</resources>

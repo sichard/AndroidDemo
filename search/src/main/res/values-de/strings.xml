@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="search_widget_hint">Anwendungen suchen,Kontakte,Mitteilungen</string>
+	<string name="search_title_contacts">Kontakte</string>
+	<string name="search_title_apps">Anwendungen</string>
+	<string name="search_none_content">Keine zugehörigen Inhalte.</string>
+	<string name="search_engine_select">Suchmaschine auswählen</string>
+	<string name="search_result">Suchergebnisse</string>
+	<string name="search_setting">Sucheinstellungen</string>
+	<string name="search_permission_hint">Berechtigung zum Lesen der Kontakte erforderlich</string>
+	<string name="search_net_not_available">Netzwerk nicht verfügbar, bitte prüfen</string>
+	<string name="search_recent">Zuletzt</string>
+	<string name="search_more_result">%1$s weitere Ergebnisse</string>
+	<string name="setting_item_auto_feedback">Feedback</string>
+	<string name="search_more">Mehr</string>
+	<string name="search_less">Weniger</string>
+	<string name="search_title_message">Mitteilungen</string>
+	<string name="search_in_web_item_content">Im Web suchen</string>
+	<string name="search_appcenter_item_content">In Apps suchen</string>
+    <string name="hot_site_title">Beliebte URL</string>
+</resources>

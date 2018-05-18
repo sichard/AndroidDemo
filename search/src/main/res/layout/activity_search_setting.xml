@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/search_engine_select"
+                android:textColor="@color/black_54"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                style="@style/setting_main_layout"
+                android:id="@+id/search_engine_google"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_setting_item_height"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_search_google" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/settings_engine_padding"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/search_engine_google"
+                    android:textColor="@color/black_87"
+                    android:textSize="@dimen/settings_item_title" />
+
+                <ImageView
+                    android:id="@+id/search_select_google"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_selected" />
+
+                <ImageView
+                    android:id="@+id/search_no_select_google"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_air"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/setting_main_layout"
+                android:id="@+id/search_engine_baidu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_setting_item_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_broswer_baidu" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/settings_engine_padding"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/search_engine_baidu"
+                    android:textColor="@color/black_87"
+                    android:textSize="@dimen/settings_item_title" />
+
+                <ImageView
+                    android:id="@+id/search_select_baidu"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_selected"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/search_no_select_baidu"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_air"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/setting_main_layout"
+                android:id="@+id/search_engine_bing"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_setting_item_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_broswer_bing" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/settings_engine_padding"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/search_engine_bing"
+                    android:textColor="@color/black_87"
+                    android:textSize="@dimen/settings_item_title" />
+
+                <ImageView
+                    android:id="@+id/search_select_bing"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_selected"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/search_no_select_bing"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_air"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/setting_main_layout"
+                android:id="@+id/search_engine_yandex"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_setting_item_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_search_yandex" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/settings_engine_padding"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/search_engine_yandex"
+                    android:textColor="@color/black_87"
+                    android:textSize="@dimen/settings_item_title" />
+
+                <ImageView
+                    android:id="@+id/search_select_yandex"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_selected"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/search_no_select_yandex"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_air"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/search_divide"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/search_result"
+                android:textColor="@color/black_54"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/search_switch_local_app_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/search_title_apps"
+                    android:textColor="@color/black_87"
+                    android:textSize="16dp" />
+
+                <Switch
+                    android:id="@+id/search_switch_local_app"
+                    style="@style/setting_switch_style1"
+                    android:layout_marginRight="16dp"
+                    android:checked="true"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/search_switch_contact_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/search_title_contacts"
+                    android:textColor="@color/black_87"
+                    android:textSize="16dp" />
+
+                <Switch
+                    android:id="@+id/search_switch_contact"
+                    style="@style/setting_switch_style1"
+                    android:layout_marginRight="16dp"
+                    android:checked="true"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/search_switch_message_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/search_title_message"
+                    android:textColor="@color/black_87"
+                    android:textSize="16dp" />
+
+                <Switch
+                    android:id="@+id/search_switch_message"
+                    style="@style/setting_switch_style1"
+                    android:layout_marginRight="16dp"
+                    android:checked="true"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/search_divide"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/search_more"
+                android:textColor="@color/black_54"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                style="@style/setting_main_layout"
+                android:id="@+id/layout_feedback"
+                android:layout_height="48dp">
+
+                <TextView
+                    style="@style/setting_item_text_gray"
+                    android:text="@string/setting_item_auto_feedback"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/search_divide"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

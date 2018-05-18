@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="search_none_content">Nu există conținut conex!</string>
+	<string name="search_engine_select">Alegeți un motor de căutare</string>
+	<string name="search_net_not_available">Rețeaua nu este disponibilă. Verificați rețeaua.</string>
+	<string name="search_permission_hint">Este necesară permisiunea de a citi contactele.</string>
+	<string name="search_result">Rezultatele căutării</string>
+	<string name="search_setting">Setările căutării</string>
+	<string name="search_title_apps">Aplicații</string>
+	<string name="search_title_contacts">Contacte</string>
+	<string name="search_widget_hint">Căutare</string>
+	<string name="setting_item_auto_feedback">Feedback</string>
+	<string name="search_more">Mai multe</string>
+	<string name="search_recent">Recent</string>
+	<string name="search_more_result">%1$s rezultate în plus</string>
+	<string name="search_title_message">Mesaje</string>
+
+	<string name="search_appcenter_item_content">Căutare în aplicația Apps</string>
+	<string name="search_in_web_item_content">Căutați pe internet</string>
+	<string name="search_less">Mai puțin</string>
+	<string name="hot_site_title">Adresă URL directă</string>
+</resources>

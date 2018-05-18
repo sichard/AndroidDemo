@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="search_none_content">Sans contenu en relation !</string>
+	<string name="search_engine_select">Choisir le moteur de recherche</string>
+	<string name="search_net_not_available">Vérifier le réseau</string>
+	<string name="search_permission_hint">Autorisation pour « Lire les contacts » nécessaire</string>
+	<string name="search_result">Résultats de la recherche</string>
+	<string name="search_setting">Paramètres de recherche</string>
+	<string name="search_title_apps">Applications</string>
+	<string name="search_title_contacts">Contacts</string>
+	<string name="search_widget_hint">Rechercher</string>
+	<string name="setting_item_auto_feedback">Commentaires</string>
+	<string name="search_more">Plus</string>
+	<string name="search_recent">Récent</string>
+	<string name="search_more_result">%1$s plus de résultats</string>
+	<string name="search_title_message">Messages</string>
+
+	<string name="search_less">Moins</string>
+	<string name="search_in_web_item_content">Rechercher sur le Web</string>
+	<string name="search_appcenter_item_content">Rechercher dans Apps</string>
+    <string name="hot_site_title">URL incontournable</string>
+</resources>

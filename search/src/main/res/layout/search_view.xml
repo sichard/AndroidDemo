@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tcl.launcherpro.search.view.SearchView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/search_bg"
+    android:orientation="vertical"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/search_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_widget_background_2">
+
+            <RelativeLayout
+                android:id="@+id/search_engine_switch"
+                android:gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/search_engine_image"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_search_google" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/search_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/abc_search_hint"
+                android:imeOptions="actionSearch|flagNoExtractUi"
+                android:singleLine="true"
+                android:textColor="@color/search_setting_engine_text"
+                android:textColorHint="@color/search_title"
+                android:textSize="14dp"
+                android:textCursorDrawable="@drawable/search_cursor" />
+
+            <ImageView
+                android:id="@+id/search_clear_text"
+                android:padding="8dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/ic_off" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#FFDCDCDC" />
+
+            <ImageView
+                android:id="@+id/search_img"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_search"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/search_web_view"
+        layout="@layout/search_webview" />
+
+    <TextView
+        android:id="@+id/search_none_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/search_entity_bg"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/search_title"
+        android:visibility="gone" />
+
+    <com.tcl.launcherpro.search.view.SearchResultListView
+        android:id="@+id/search_result_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:background="@color/search_bg"/>
+
+</com.tcl.launcherpro.search.view.SearchView>

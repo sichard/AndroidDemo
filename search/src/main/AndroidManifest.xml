@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tcl.launcherpro.search">
+
+    <!--此权限用于搜索联系人信息-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!--此权限用于搜索短信信息-->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!--此权限用于获取网络状态(判定是否有网络是用到)-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--此权限用于用户访问网络-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+        <activity
+            android:name=".SearchSettingActivity"
+            android:theme="@style/TitleTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="${applicationId}.hisearch.ACTION_SEARCHSETTING" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

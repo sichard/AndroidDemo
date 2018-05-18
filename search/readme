@@ -1,0 +1,12 @@
+搜索集成说明
+target：集成搜索的功能的目标应用。以下target具有相同意义
+
+
+1.首先添加搜索的module，参考settings.gradle以及app的build.gradle
+2.在target的Application中的onCreate中调用SearchSDK.init(getApplicationContext(), true)方法。参考SearchApplication
+3.加入所需权限，需要两个权限，参考app下的AndroidManifest.xml文件，注意不要重复添加权限。
+        放在target的AndroidManifest.xml中
+        <!--此权限用于获取网络状态(判定是否有网络是用到)-->
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <!--此权限用户-->
+        <uses-permission android:name="android.permission.INTERNET" />
