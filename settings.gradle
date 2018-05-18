@@ -1,1 +1,1 @@
-include ':app', ':common', ':weather', ':battersaver','cpucool'
+include ':app', ':common', ':weather', ':battersaver',':cpucool',':search'

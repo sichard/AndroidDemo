@@ -41,12 +41,12 @@ repositories {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation dep.appcompatV7
     implementation dep.supportV4
     //编译OkHttp模块
     implementation dep.okhttp3
     //编译fastJson(解析天气返回Json数据)
     implementation 'com.alibaba:fastjson:1.2.14'
-    compile project(path: ':common')
+    implementation project(path: ':common')
 }
