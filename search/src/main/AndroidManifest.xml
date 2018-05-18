@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tcl.launcherpro.search">
+    package="com.android.sichard.search">
 
     <!--此权限用于搜索联系人信息-->
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -13,7 +13,7 @@
 
     <application>
         <activity
-            android:name=".SearchSettingActivity"
+            android:name="com.android.sichard.search.SearchSettingActivity"
             android:theme="@style/TitleTheme">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />

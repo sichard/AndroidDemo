@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.tcl.launcherpro.search.view.SearchInWebItemView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.android.sichard.search.view.SearchInWebItemView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/search_nomal_item_height"
     android:background="@android:color/white">
@@ -32,4 +32,4 @@
         android:layout_alignParentBottom="true"
         android:background="#F3F4F5" />
 
-</com.tcl.launcherpro.search.view.SearchInWebItemView>
+</com.android.sichard.search.view.SearchInWebItemView>

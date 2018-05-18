@@ -3,7 +3,7 @@ package com.sichard.demo;
 import android.app.Application;
 
 import com.sichard.weather.WeatherWidgetManager;
-import com.tcl.launcherpro.search.SearchSDK;
+import com.android.sichard.search.SearchSDK;
 
 /**
  * <br>类描述:Demo的Application实例
