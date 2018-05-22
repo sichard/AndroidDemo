@@ -34,17 +34,12 @@ public class WeatherWidget extends LinearLayout implements View.OnClickListener 
     private LinearLayout mLocationArea;
     private LinearLayout mRefreshArea;
     private TextView mWind, mHumidity, mVisibility, mTempMin, mTempMax;
-
-    private boolean mAttached;
-    private boolean mRealDelete;    // 手动移除才为true
     private final RotateAnimation loadingAnimation = new RotateAnimation(0f, 360f, Animation.RELATIVE_TO_SELF,
             0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
     private TextView mUpdateTime;
     private LinearLayout mWidgetWeather;
     private long mLastRefreshTime;
     private WeatherDataEntity mWeatherDataEntity;
-    /** 是否点击了刷新按钮 */
-    private boolean mIsClickRefresh;
 
     public WeatherWidget(Context context) {
         super(context);
@@ -60,6 +55,7 @@ public class WeatherWidget extends LinearLayout implements View.OnClickListener 
     protected void onFinishInflate() {
         super.onFinishInflate();
         initView();
+        WeatherWidgetManager.getsInstance().addWeatherWidget(this);   // 将每个创建的天气widget加入管理
     }
 
     private void initView(){
@@ -82,12 +78,6 @@ public class WeatherWidget extends LinearLayout implements View.OnClickListener 
         mWidgetWeather.setOnClickListener(this);
         mLocationArea.setOnClickListener(this);
         mRefreshArea.setOnClickListener(this);
-    }
-
-    private OnLongClickListener onlongClickListener;
-    @Override
-    public void setOnLongClickListener(OnLongClickListener l) {
-        onlongClickListener = l;
     }
 
     public void startLoadingAnimation(){
@@ -181,30 +171,6 @@ public class WeatherWidget extends LinearLayout implements View.OnClickListener 
     }
 
     @Override
-    protected void onAttachedToWindow() {
-        super.onAttachedToWindow();
-        Log.i("sjh5", " onAttachedToWindow " );
-        if (!mAttached) {
-            mAttached = true;
-            WeatherWidgetManager.getsInstance().addWeatherWidget(this);   // 将每个创建的天气widget加入管理
-        }
-    }
-
-    /**
-     * 手机更改语言回到桌面时会触发
-     */
-    @Override
-    protected void onDetachedFromWindow() {
-        super.onDetachedFromWindow();
-        Log.i("sjh5", " onDetachedFromWindow " );
-        if (mAttached) {
-            mAttached = false;
-            WeatherWidgetManager.getsInstance().deleteWeatherWidget(this, mRealDelete);
-            mRealDelete = false;
-        }
-    }
-
-    @Override
     public void onClick(View v) {
         if (v == mLocationArea) {
             Intent intent = new Intent(mContext, CityActivity.class);
@@ -221,7 +187,6 @@ public class WeatherWidget extends LinearLayout implements View.OnClickListener 
                     WeatherWidgetManager.getsInstance().requestLocationAndGetWeather();
                 }
                 mLastRefreshTime = now;
-                mIsClickRefresh = true;
             }
         } else if (v == mWidgetWeather) {
             if (WeatherDataManager.getInstance().isHaveData()) {

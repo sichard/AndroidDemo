@@ -7,6 +7,7 @@ import android.os.Looper;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.android.sichard.common.framework.SingletonBase;
 import com.sichard.weather.Interface.IWeatherDataObserver;
 import com.sichard.weather.Interface.OnLocationChangedListener;
 import com.sichard.weather.utils.DeviceUtil;
@@ -31,12 +32,10 @@ import java.util.TimerTask;
  * <br><b>Date 2017/3/31</b>
  */
 
-public class WeatherWidgetManager implements IWeatherDataObserver, OnLocationChangedListener {
+public class WeatherWidgetManager extends SingletonBase implements IWeatherDataObserver, OnLocationChangedListener {
     private static final String TAG = "csc";
     private static final int GET_CITY_TIMEOUT = 1 * 60 * 1000;// 获取天气信息的任务超时时间
 
-    private static Context sContext;
-    private static WeatherWidgetManager sInstance;
     private WeatherLocationManager mLocationManger;
     private GetCityTask mCurrentGetCityTask;
     private Handler mHandler;
@@ -64,16 +63,15 @@ public class WeatherWidgetManager implements IWeatherDataObserver, OnLocationCha
      * @return
      */
     public static WeatherWidgetManager getsInstance() {
-        if (sInstance == null) {
-            sInstance = new WeatherWidgetManager();
-        }
-        return sInstance;
+        return instance(WeatherWidgetManager.class);
     }
 
     private WeatherWidgetManager() {
         if (sContext == null) {
             throw new RuntimeException("init() must be called first!!!");
         }
+        WeatherDataManager.init(sContext);
+        WeatherLocationManager.init(sContext);
         WeatherDataManager.getInstance().register(this);
         mHandler = new Handler(Looper.getMainLooper());
         mLocationManger = WeatherLocationManager.getInstance();
@@ -81,8 +79,6 @@ public class WeatherWidgetManager implements IWeatherDataObserver, OnLocationCha
 
     public static void init(Context context) {
         sContext = context.getApplicationContext();
-        WeatherDataManager.init(context);
-        WeatherLocationManager.init(context);
         getsInstance();
     }
 
@@ -523,22 +519,6 @@ public class WeatherWidgetManager implements IWeatherDataObserver, OnLocationCha
     }
 
     /**
-     * @param weatherWidget
-     * @param realDelete    默认为false，手动移除控件时为true.
-     */
-    public void deleteWeatherWidget(WeatherWidget weatherWidget, boolean realDelete) {
-        // 处理多余的detach。remove最后一个widget后，因为执行了detach的WeatherViewManager.getInstance(sContext).deleteWeatherWidget(this, false)所以要清理掉.
-        if (mWidgetList.size() == 0 && !realDelete) {
-            sInstance = null;
-        } else if (mWidgetList.contains(weatherWidget)) {
-            mWidgetList.remove(weatherWidget);
-            if (mWidgetList.size() == 0 && realDelete) {
-                release();
-            }
-        }
-    }
-
-    /**
      * 终止所有天气请求有关的任务并清理占有资源.
      */
     public void release(){
@@ -555,7 +535,5 @@ public class WeatherWidgetManager implements IWeatherDataObserver, OnLocationCha
         mHandler.removeCallbacks(mGetWeatherTimeoutRunnable);
 
         mLocationManger.release();
-        sInstance = null;
-
     }
 }
