@@ -8,7 +8,7 @@
         android:layout_width="160dp"
         android:layout_height="240dp"
         android:scaleType="fitStart"
-        android:src="@mipmap/test" />
+        android:src="@mipmap/base_animation_test" />
 
     <com.sichard.demo.animation.view.CustomView
         android:layout_width="match_parent"
