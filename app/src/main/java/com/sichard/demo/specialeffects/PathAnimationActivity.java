@@ -5,6 +5,7 @@ import android.view.View;
 
 import com.android.sichard.common.BaseActivity;
 import com.sichard.demo.R;
+import com.sichard.demo.specialeffects.view.FlowerAnimationView;
 
 public class PathAnimationActivity extends BaseActivity {
 

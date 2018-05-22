@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
-    <com.sichard.demo.specialeffects.FlowerAnimationView
+    <com.sichard.demo.specialeffects.view.FlowerAnimationView
         android:id="@+id/path_animation_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
