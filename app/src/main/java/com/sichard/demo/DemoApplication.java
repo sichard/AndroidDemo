@@ -2,7 +2,7 @@ package com.sichard.demo;
 
 import android.app.Application;
 
-import com.sichard.weather.WeatherWidgetManager;
+import com.android.sichard.common.framework.SingletonBase;
 import com.android.sichard.search.SearchSDK;
 
 /**
@@ -15,7 +15,8 @@ public class DemoApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        WeatherWidgetManager.init(this);
+        SingletonBase.registerContext(this.getApplicationContext());
+//        WeatherWidgetManager.init(this);
         SearchSDK.init(getApplicationContext(), true);
     }
 }

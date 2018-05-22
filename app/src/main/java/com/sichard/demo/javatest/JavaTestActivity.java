@@ -2,14 +2,10 @@ package com.sichard.demo.javatest;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.util.Log;
-import android.view.View;
-import android.widget.SearchView;
 
 import com.android.sichard.common.BaseActivity;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.android.sichard.common.framework.SingletonBase;
+import com.android.sichard.common.framework.TestInstance;
 
 
 /**
@@ -23,12 +19,23 @@ public class JavaTestActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        List<View> list = new ArrayList<>();
-        View view = new View(this);
-        list.add(view);
-        Log.i("sichard", "JavaTestActivity|onCreate:======" + view.toString());
-        view = new SearchView(this);
-        Log.i("sichard", "JavaTestActivity|onCreate:======" + view.toString());
-        Log.e("sichard", "JavaTestActivity|onCreate:======" + list.get(0).toString());
+        for (int i = 0; i < 100; i++) {
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+//                Log.i("sichard", "JavaTestActivity|run:" + SampleDCLInstance.getInstance().toString());
+//                Log.i("sichard", "JavaTestActivity|run:" + SingletonBase.instance(TestInstance.class).toString());
+                    TestInstance.getInstance().test(Thread.currentThread().getName());
+
+                }
+            }, "thread " + i).start();
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+//        TestInstance.getInstance().release();
+        SingletonBase.destroy(TestInstance.getInstance());
     }
 }
