@@ -35,7 +35,6 @@ public class JavaTestActivity extends BaseActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-//        TestInstance.getInstance().release();
         SingletonBase.destroy(TestInstance.getInstance());
     }
 }

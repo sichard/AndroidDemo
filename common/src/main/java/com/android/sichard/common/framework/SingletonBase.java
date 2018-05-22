@@ -1,7 +1,6 @@
 package com.android.sichard.common.framework;
 
 import android.content.Context;
-import android.util.Log;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -66,31 +65,15 @@ public class SingletonBase {
         return (T) map.get(type);
     }
 
-//    /**
-//     * 销毁单例
-//     * @param type 要销毁的单例Class
-//     * @param <T>
-//     */
-//    public static <T> void destroy(Class<T> type) {
-//        type.
-//        Object remove = map.remove(type);
-//        remove = null;
-//    }
     /**
      * 销毁单例
-     * @param type 要销毁的单例Class
+     * @param singleton 要销毁的单例Class
      */
-    public static void destroy(SingletonBase type) {
-        type.release();
-        Class<? extends SingletonBase> aClass = type.getClass();
-        Log.e("sichard", "SingletonBase|destroy:" + aClass.getSimpleName());
-        Object remove = map.remove(aClass);
-        if (remove != null) {
-            remove = null;
-            Log.i("sichard", "SingletonBase|destroy:" + "instance destroyed");
-        } else {
-            Log.i("sichard", "SingletonBase|destroy:" + "instance destroyed failed");
-        }
+    public static void destroy(SingletonBase singleton) {
+        singleton.release();
+        Class<? extends SingletonBase> singletonClass = singleton.getClass();
+        Object remove = map.remove(singletonClass);
+        remove = null;
     }
 
     /**
