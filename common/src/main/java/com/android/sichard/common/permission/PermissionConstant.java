@@ -12,4 +12,5 @@ public class PermissionConstant {
     public static final int PERMISSION_CALL_PHONE = 3;
     public static final int PERMISSION_CAMERA = 4;
     public static final int ACCESS_COARSE_LOCATION = 5;
+    public static final int PERMISSION_READ_WRITE_STORAGE = 6;
 }
