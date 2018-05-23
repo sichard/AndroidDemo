@@ -200,7 +200,6 @@ public class AccuWeather {
     public ForecastDailyEntity getCurrentForecast(String locationKey, String lang) throws NetworkRequestException {
         // http://api.accuweather.com/forecasts/v1/daily/1day/58341?apikey=af7408e9f4d34fa6a411dd92028d4630
         // http://api.accuweather.com/forecasts/v1/daily/5day/335315?apikey={your key}
-        Log.d("wxj", "AccuWeather : getCurrentForecast: ");
         String baseUrl = FORECAST_DAILY_BASE_URL + locationKey + "?";
         String language = handleLanguage(lang);
         Map paramsMap = new HashMap<String, String>();

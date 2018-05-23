@@ -1,0 +1,17 @@
+<resources>
+    <string name="speed_charging">Fast</string>
+    <string name="continuous_charging">Continuous</string>
+    <string name="trickle_charging">Trickle</string>
+
+    <string name="charging_estimate_time">Remaining</string>
+    <string name="trickle_charging_time">Trickle model to protect your battery</string>
+
+    <string name="time_hour">%1$dH</string>
+    <string name="time_minute">%1$dM</string>
+
+    <string name="charging_complete">Fully charged</string>
+    <string name="charging_speed">Charge speed + %1$d%2$s</string>
+
+    <string name="slide_to_unlock">Slide to unlock >></string>
+    <string name="lock_ad_hint">No active ads today</string>
+</resources>

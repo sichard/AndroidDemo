@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="charging_complete">Ricarica completa</string>
+	<string name="charging_estimate_time">Rimanente</string>
+	<string name="charging_speed">Velocità di ricarica +%1$d%2$s</string>
+	<string name="continuous_charging">Continua</string>
+	<string name="lock_ad_hint">Nessun annuncio attivo oggi</string>
+	<string name="slide_to_unlock">Scorri per sbloccare >></string>
+	<string name="speed_charging">Veloce</string>
+	<string name="trickle_charging">Mantenimento</string>
+	<string name="trickle_charging_time">La modalità di mantenimento consente di proteggere la batteria</string>
+</resources>

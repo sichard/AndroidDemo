@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="charging_complete">Baterai penuh</string>
+	<string name="charging_estimate_time">Tersisa</string>
+	<string name="charging_speed">Kecepatan mengisi +%1$d%2$s</string>
+	<string name="continuous_charging">Berkelanjutan</string>
+	<string name="lock_ad_hint">Tidak ada iklan aktif hari ini</string>
+	<string name="slide_to_unlock">Geser untuk membuka kunci >></string>
+	<string name="speed_charging">Cepat</string>
+	<string name="trickle_charging">Aliran listrik kecil</string>
+	<string name="trickle_charging_time">Model aliran listrik kecil untuk melindungi baterai Anda</string>
+</resources>

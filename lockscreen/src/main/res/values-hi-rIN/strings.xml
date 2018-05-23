@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="charging_complete">पूर्ण रूप से चार्ज</string>
+	<string name="charging_estimate_time">शेष</string>
+	<string name="charging_speed">चार्ज गति +%1$d%2$s</string>
+	<string name="continuous_charging">निरंतर</string>
+	<string name="lock_ad_hint">आज कोई भी सक्रिय विज्ञापन नहीं</string>
+	<string name="slide_to_unlock">अनलॉक करने के लिए स्लाइड करें >></string>
+	<string name="speed_charging">तेज़</string>
+	<string name="trickle_charging">रिसाव</string>
+	<string name="trickle_charging_time">आपकी बैटरी की सुरक्षा करने के लिए ट्रिकल मॉडल</string>
+</resources>

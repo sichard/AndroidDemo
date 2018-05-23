@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="charging_complete">Recharge terminée</string>
+	<string name="charging_estimate_time">Restant</string>
+	<string name="charging_speed">Vitesse de recharge +%1$d%2$s</string>
+	<string name="continuous_charging">Prise en continu</string>
+	<string name="lock_ad_hint">Aucune publicité active aujourd\'hui</string>
+	<string name="slide_to_unlock">Faire glisser pour déverrouiller >></string>
+	<string name="speed_charging">Rapide</string>
+	<string name="trickle_charging">Lent</string>
+	<string name="trickle_charging_time">Activer le mode Lent pour protéger votre batterie</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="charging_complete">Полностью заряжена</string>
+	<string name="charging_estimate_time">Осталось</string>
+	<string name="charging_speed">Скорость зарядки +%1$d%2$s</string>
+	<string name="continuous_charging">Длительная</string>
+	<string name="lock_ad_hint">Нет активной рекламы сегодня</string>
+	<string name="slide_to_unlock">Проведите по экрану, чтобы разблокировать устройство >></string>
+	<string name="speed_charging">Быстрая</string>
+	<string name="trickle_charging">Непрерывная</string>
+	<string name="trickle_charging_time">Режим непрерывной подзарядки для защиты батареи</string>
+</resources>

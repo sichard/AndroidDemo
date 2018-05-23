@@ -26,4 +26,5 @@
     <string name="activity_cpu_cool">Project/CPU Cool</string>
     <string name="activity_batter_saver">Project/BatterSaver</string>
     <string name="activity_search">Project/Search</string>
+    <string name="activity_lock_screen">Project/Lock Screen</string>
 </resources>

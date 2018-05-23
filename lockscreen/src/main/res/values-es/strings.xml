@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="charging_complete">Carga completa</string>
+	<string name="charging_estimate_time">Restantes</string>
+	<string name="charging_speed">Velocidad de carga +%1$d%2$s</string>
+	<string name="continuous_charging">Continua</string>
+	<string name="lock_ad_hint">Hoy no hay anuncios activos</string>
+	<string name="slide_to_unlock">Deslice el dedo para desbloquear >></string>
+	<string name="speed_charging">Rápida</string>
+	<string name="trickle_charging">Intermitente</string>
+	<string name="trickle_charging_time">Modelo intermitente para proteger la batería</string>
+</resources>

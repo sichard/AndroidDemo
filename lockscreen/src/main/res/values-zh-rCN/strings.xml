@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="charging_complete">已充满</string>
+	<string name="charging_estimate_time">剩余</string>
+	<string name="charging_speed">充电加速 +%1$d%2$s</string>
+	<string name="continuous_charging">持续</string>
+	<string name="lock_ad_hint">当天不会再展示广告</string>
+	<string name="slide_to_unlock">滑动解锁 >></string>
+	<string name="speed_charging">快速充电中</string>
+	<string name="trickle_charging">涓流</string>
+	<string name="trickle_charging_time">涓流保护中</string>
+</resources>

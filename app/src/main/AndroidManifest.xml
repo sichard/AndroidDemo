@@ -124,6 +124,15 @@
         </activity>
 
         <activity
+            android:name=".project.LockScreenLauncherActivity"
+            android:label="@string/activity_lock_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".specialeffects.RippleActivity"
             android:label="@string/activity_ripple">
             <intent-filter>

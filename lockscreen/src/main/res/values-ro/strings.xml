@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="charging_complete">Încărcat complet</string>
+	<string name="charging_estimate_time">Rămas</string>
+	<string name="charging_speed">+%1$d%2$s viteză de încărcare</string>
+	<string name="continuous_charging">Continuă</string>
+	<string name="lock_ad_hint">Nicio reclamă activă azi</string>
+	<string name="slide_to_unlock">Glisați pentru a debloca >></string>
+	<string name="speed_charging">Rapidă</string>
+	<string name="trickle_charging">Intermitentă</string>
+	<string name="trickle_charging_time">Utilizați modul de încărcare intermitentă pentru a proteja bateria</string>
+</resources>

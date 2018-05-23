@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+	<string name="charging_complete">Vollständig geladen</string>
+	<string name="charging_estimate_time">Verbleibend</string>
+	<string name="charging_speed">Ladegeschwindigkeit +%1$d%2$s</string>
+	<string name="continuous_charging">Kontinuierlich</string>
+	<string name="lock_ad_hint">Heute keine aktive Werbung</string>
+	<string name="slide_to_unlock">Wischen: entsperren >></string>
+	<string name="speed_charging">Schnell</string>
+	<string name="trickle_charging">Langsam</string>
+	<string name="trickle_charging_time">Langsames Verbrauchsmodell zum Schutz des Akkus</string>
+</resources>

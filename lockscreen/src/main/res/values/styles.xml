@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LockScreenTheme">
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowFullscreen">true</item><!--全屏-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item><!--是否透明-->
+    </style>
+</resources>
