@@ -23,13 +23,13 @@ public class SearchEngineHelper {
     /** 搜索引擎url */
     public static final String KEY_SEARCH_ENGINE_URL = "key_search_engine_url";
     /** 搜索引擎改变的Action */
-    public static final String ACTION_ENGINE_CHANGED = "com.tcl.launcherpro.action.SEARCH_ENGINE_CHANGED";
+    public static final String ACTION_ENGINE_CHANGED = "com.android.sichard.search.action.SEARCH_ENGINE_CHANGED";
     /** 搜索结果是否显示App的Action */
-    public static final String ACTION_APP_CHANGED = "com.tcl.launcherpro.action.SEARCH_APP_CHANGED";
+    public static final String ACTION_APP_CHANGED = "com.android.sichard.search.action.SEARCH_APP_CHANGED";
     /** 搜索结果是否显示Contact的Action */
-    public static final String ACTION_CONTACT_CHANGED = "com.tcl.launcherpro.action.SEARCH_CONTACT_CHANGED";
+    public static final String ACTION_CONTACT_CHANGED = "com.android.sichard.search.action.SEARCH_CONTACT_CHANGED";
     /** 搜索结果是否显示Message的Action */
-    public static final String ACTION_MESSAGE_CHANGED = "com.tcl.launcherpro.action.SEARCH_MESSAGE_CHANGED";
+    public static final String ACTION_MESSAGE_CHANGED = "com.android.sichard.search.action.SEARCH_MESSAGE_CHANGED";
     /** 谷歌地址 */
     public static final String SEARCH_ENGINE_GOOGLE_URL = "http://www.google.com/search?q=";
     /** 百度地址 */

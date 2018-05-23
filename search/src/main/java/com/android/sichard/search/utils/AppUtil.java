@@ -83,7 +83,7 @@ public final class AppUtil {
 
         ApplicationInfo applicationInfo = appResolveInfo.activityInfo.applicationInfo;
         // 如果是桌面自身就过滤掉，此处如果用包名去过滤，主题也会被过滤掉，故用类名
-        if (appResolveInfo.activityInfo.name.equals("com.tcl.launcherpro.MainActivity")) {
+        if (applicationInfo.packageName.equals(context.getPackageName())) {
             return null;
         }
         ComponentName componentName = new ComponentName(applicationInfo.packageName,
