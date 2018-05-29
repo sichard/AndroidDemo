@@ -34,87 +34,51 @@ import java.util.List;
 public class DragSlideListView extends SlideListView {
 
     private WindowManager mWindowManager;
-    /**
-     * item镜像的布局参数
-     */
+    /** item镜像的布局参数 */
     private WindowManager.LayoutParams mWindowLayoutParams;
     private WindowManager.LayoutParams mNewWindowLayoutParams;
-    /**
-     * 选中的item的position
-     */
+    /** 选中的item的position */
     private int mSelectedPosition;
-    /**
-     * 选中的item的View对象
-     */
+    /** 选中的item的View对象 */
     private View mItemView;
-    /**
-     * 用于拖拽的镜像，这里直接用一个ImageView装载Bitmap
-     */
+    /** 用于拖拽的镜像，这里直接用一个ImageView装载Bitmap */
     private ImageView mDragIV;
-    /**
-     * 选中的item的镜像Bitmap
-     */
+    /** 选中的item的镜像Bitmap */
     private Bitmap mBitmap;
-    /**
-     * 按下的点到所在item的上边缘的距离
-     */
+    /** 按下的点到所在item的上边缘的距离 */
     private int mPoint2ItemTop;
 
-    /**
-     * 按下的点到所在item的左边缘的距离
-     */
+    /** 按下的点到所在item的左边缘的距离 */
     private int mPoint2ItemLeft;
 
-    /**
-     * CanDragListView距离屏幕顶部的偏移量
-     */
+    /** CanDragListView距离屏幕顶部的偏移量 */
     private int mOffset2Top;
-    /**
-     * CanDragListView自动向下滚动的边界值
-     */
+    /** CanDragListView自动向下滚动的边界值 */
     private int mDownScrollBorder;
 
-    /**
-     * CanDragListView自动向上滚动的边界值
-     */
+    /** CanDragListView自动向上滚动的边界值 */
     private int mUpScrollBorder;
-    /**
-     * CanDragListView自动滚动的速度
-     */
+    /** CanDragListView自动滚动的速度 */
     private static final int speed = 20;
 
-    /**
-     * CanDragListView距离屏幕左边的偏移量
-     */
+    /** CanDragListView距离屏幕左边的偏移量 */
     private int mOffset2Left;
-    /**
-     * 状态栏的高度
-     */
+    /** 状态栏的高度 */
     private int mStatusHeight;
-    /**
-     * 默认长按事件时间是1000毫秒
-     */
+    /** 默认长按事件时间是1000毫秒 */
     private long mLongClickTime = 600;
-    /**
-     * 是否可拖拽，默认为false
-     */
+    /** 是否可拖拽，默认为false */
     private boolean isDrag = false;
     /** 是否交换了位置 */
     private boolean mIsSwap = false;
-    /**
-     * 按下时的x坐标，move事件后会重新赋值
-     */
+    /** 按下时的x坐标，move事件后会重新赋值 */
     private int mDownX;
-    /**
-     * 按下时的y坐标，move事件后会重新赋值
-     */
+    /** 按下时的y坐标，move事件后会重新赋值 */
     private int mDownY;
     /** 按下时的x坐标，ove事件后不会改变 */
     private int mOriginalDownX;
 
-    /**
-     * item发生变化回调的接口
-     */
+    /** item发生变化回调的接口 */
     private OnChangedListener onChangedListener;
 
     /**

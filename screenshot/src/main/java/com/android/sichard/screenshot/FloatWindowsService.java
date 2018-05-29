@@ -34,10 +34,10 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 
 /**
- *<br>类描述：用于启动悬浮按钮的服务类
- *<br>详细描述：启动悬浮窗界面，巧妙地将
- *<br><b>Author sichard</b>
- *<br><b>Date 18-5-23</b>
+ * <br>类描述：用于启动悬浮按钮的服务类
+ * <br>详细描述：启动悬浮窗界面，巧妙地将
+ * <br><b>Author sichard</b>
+ * <br><b>Date 18-5-23</b>
  */
 @TargetApi(Build.VERSION_CODES.LOLLIPOP)
 public class FloatWindowsService extends Service {

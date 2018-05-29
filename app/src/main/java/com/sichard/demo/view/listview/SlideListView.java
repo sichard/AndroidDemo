@@ -1,4 +1,4 @@
-package com.sichard.weather.view;
+package com.sichard.demo.view.listview;
 
 import android.content.Context;
 import android.util.AttributeSet;

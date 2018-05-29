@@ -52,6 +52,15 @@
         </activity>
 
         <activity
+            android:name=".view.listview.SlideListViewActivity"
+            android:label="@string/activity_list_view_slide">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".screen.ScreenPropertyActivity"
             android:label="@string/activity_screen_property">
             <intent-filter>

@@ -23,6 +23,18 @@ allprojects {
     }
 }
 
+//统一使用core.gradle文件指定的编译版本
+subprojects { subproject ->
+    afterEvaluate {
+        if ((subproject.plugins.hasPlugin('android') || subproject.plugins.hasPlugin('android-library'))) {
+            android {
+                compileSdkVersion rootProject.ext.dep.compileSdkVersion
+                buildToolsVersion rootProject.ext.dep.buildToolsVersion
+            }
+        }
+    }
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
