@@ -43,7 +43,7 @@
         </activity>
 
         <activity
-            android:name=".view.listview.DragListViewActivity"
+            android:name=".view.listview.activity.DragListViewActivity"
             android:label="@string/activity_list_view_drag">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -52,7 +52,16 @@
         </activity>
 
         <activity
-            android:name=".view.listview.SlideListViewActivity"
+            android:name=".view.listview.activity.DragSwapListViewActivity"
+            android:label="@string/activity_list_view_drag_swap">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".view.listview.activity.SlideListViewActivity"
             android:label="@string/activity_list_view_slide">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

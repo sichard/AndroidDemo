@@ -1,4 +1,4 @@
-package com.sichard.demo.view.listview;
+package com.sichard.demo.view.listview.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import com.android.sichard.common.BaseActivity;
 import com.sichard.demo.R;
+import com.sichard.demo.view.listview.SlideItemLayout;
+import com.sichard.demo.view.listview.SlideListView;
 
 import java.util.Arrays;
 import java.util.List;

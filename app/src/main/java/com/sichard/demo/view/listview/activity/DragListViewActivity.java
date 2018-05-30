@@ -1,4 +1,4 @@
-package com.sichard.demo.view.listview;
+package com.sichard.demo.view.listview.activity;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.android.sichard.common.BaseActivity;
 import com.sichard.demo.R;
+import com.sichard.demo.view.listview.DragListView;
 
 import java.util.ArrayList;
 import java.util.List;
