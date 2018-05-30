@@ -65,6 +65,15 @@ public class SlideItemLayout extends LinearLayout {
     }
 
     /**
+     * 立即关闭Menu
+     */
+    public void closeMenu() {
+        mIsMenuOpen = false;
+        mScroller.startScroll(mContentLayoutParams.leftMargin, 0, maxLeftMargin - mContentLayoutParams.leftMargin, 0, 0);
+        postInvalidate();
+    }
+
+    /**
      * 在布局inflate完成后调用
      */
     @Override

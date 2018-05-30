@@ -14,6 +14,7 @@
     <string name="activity_list_view_drag">View/ListView/Drag ListView</string>
     <string name="activity_list_view_drag_swap">View/ListView/Drag Swap ListView</string>
     <string name="activity_list_view_slide">View/ListView/Slide ListView</string>
+    <string name="activity_list_view_drag_slide">View/ListView/Drag Slide ListView</string>
 
     <!--屏幕属性-->
     <string name="activity_screen_property">Screen Property</string>
