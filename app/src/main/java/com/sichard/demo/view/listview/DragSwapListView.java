@@ -98,21 +98,6 @@ public class DragSwapListView extends ListView {
 
     private Handler mHandler = new Handler();
 
-    // 用来处理长按的Runnable
-    private Runnable mLongClickRunnable = new Runnable() {
-
-        @Override
-        public void run() {
-            isDrag = true; // 设置可以拖拽
-            if (mItemView != null) {
-                mItemView.setVisibility(View.INVISIBLE);// 隐藏该item
-            }
-            Log.i("DragDragListView", "**mLongClickRunnable**");
-            // 根据我们按下的点显示item镜像
-            createDragImage(mBitmap, mDownX, mDownY);
-        }
-    };
-
     /**
      * 当mDownY的值大于向上滚动的边界值，触发自动向上滚动 当mDownY的值小于向下滚动的边界值，触犯自动向下滚动 否则不进行滚动
      */
@@ -140,7 +125,7 @@ public class DragSwapListView extends ListView {
     };
 
     @Override
-    public boolean onTouchEvent(MotionEvent event) {
+    public boolean dispatchTouchEvent(MotionEvent event) {
         // Log.i("CanDragListView", mSelectedPosition+"****"+mItemView);
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
@@ -155,10 +140,20 @@ public class DragSwapListView extends ListView {
                 }
                 // 根据position获取对应的item
                 mItemView = getChildAt(mSelectedPosition - getFirstVisiblePosition());
-                // 使用Handler延迟mLongClickTime执行mLongClickRunnable
-                mHandler.postDelayed(mLongClickRunnable, mLongClickTime);
+                mItemView.setOnLongClickListener(new OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+                        isDrag = true; // 设置可以拖拽
+                        if (mItemView != null) {
+                            mItemView.setVisibility(View.INVISIBLE);// 隐藏该item
+                        }
+                        Log.i("sichardcao", "DragSwapListView|onLongClick:" + "**mLongClickRunnable**");
+                        // 根据我们按下的点显示item镜像
+                        createDragImage(mBitmap, mDownX, mDownY);
+                        return true;
+                    }
+                });
                 if (mItemView != null) {
-                    // 下面这几个距离大家可以参考我的博客上面的图来理解下
                     mPoint2ItemTop = mDownY - mItemView.getTop();
                     mPoint2ItemLeft = mDownX - mItemView.getLeft();
 
@@ -184,9 +179,6 @@ public class DragSwapListView extends ListView {
                 int moveX = (int) event.getX();
                 int moveY = (int) event.getY();
                 if (isDrag) {
-                    if (!isOnTouchInItem(mItemView, moveX, moveY)) {
-                        mHandler.removeCallbacks(mLongClickRunnable);
-                    }
                     mDownX = moveX;
                     mDownY = moveY;
                     onDragItem(moveX, moveY);
@@ -194,7 +186,6 @@ public class DragSwapListView extends ListView {
                 break;
             case MotionEvent.ACTION_UP:
                 onStopDrag();
-                mHandler.removeCallbacks(mLongClickRunnable);
                 mHandler.removeCallbacks(mScrollRunnable);
 
                 isDrag = false;
@@ -204,7 +195,7 @@ public class DragSwapListView extends ListView {
                 break;
         }
 
-        return super.onTouchEvent(event);
+        return super.dispatchTouchEvent(event);
     }
 
     /**
@@ -345,7 +336,7 @@ public class DragSwapListView extends ListView {
      * @param context
      * @return
      */
-    private static int getStatusHeight(Context context) {
+    private int getStatusHeight(Context context) {
         int statusHeight = 0;
         Rect localRect = new Rect();
         ((Activity) context).getWindow().getDecorView().getWindowVisibleDisplayFrame(localRect);
