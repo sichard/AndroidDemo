@@ -199,29 +199,6 @@ public class DragSwapListView extends ListView {
     }
 
     /**
-     * 判断手指按下的坐标是否在item范围内
-     *
-     * @param view 按下的view
-     * @param downX 按下时x的坐标
-     * @param downY 按下时y的坐标
-     * @return true,按下的坐标在item范围内;false,不在范围内
-     */
-    private boolean isOnTouchInItem(View view, int downX, int downY) {
-        if (view == null) {
-            return false;
-        }
-        int leftX = view.getLeft();
-        int topY = view.getTop();
-        if (downX < leftX || downX > leftX + view.getWidth()) {
-            return false;
-        }
-        if (downY < topY || downY > topY + view.getHeight()) {
-            return false;
-        }
-        return true;
-    }
-
-    /**
      * 创建拖动的镜像
      *
      * @param bitmap
@@ -327,7 +304,7 @@ public class DragSwapListView extends ListView {
         }
         // ((DragAdapter)this.getAdapter()).setItemHide(-1);
         removeDragImage();
-        //todo 如果实际应用，此处应对item数据交换进行存储
+        //TODO: 18-5-30 如果实际应用，此处应对item数据交换进行存储
     }
 
     /**
