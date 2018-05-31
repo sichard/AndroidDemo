@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 
 import com.android.sichard.common.permission.PermissionAssist;
 import com.android.sichard.common.permission.PermissionConstant;
+import com.android.sichard.common.utils.DrawUtils;
 import com.android.sichard.search.common.SearchAppManager;
 import com.android.sichard.search.common.TaskManager;
 import com.android.sichard.search.contact.ContactProvider;
@@ -21,7 +22,6 @@ import com.android.sichard.search.data.contact.ContactObserver;
 import com.android.sichard.search.data.message.MessageProvider;
 import com.android.sichard.search.recent.IRecentTask;
 import com.android.sichard.search.theme.ThemeTools;
-import com.android.sichard.search.utils.DrawUtils;
 import com.android.sichard.search.view.SearchView;
 
 import java.lang.reflect.Constructor;

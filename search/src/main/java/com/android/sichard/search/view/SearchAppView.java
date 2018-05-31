@@ -10,13 +10,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.android.sichard.common.utils.DrawUtils;
 import com.android.sichard.search.R;
 import com.android.sichard.search.SearchSDK;
 import com.android.sichard.search.data.App.AppInfo;
 import com.android.sichard.search.data.ISearchItem;
 import com.android.sichard.search.recent.IRecentTask;
 import com.android.sichard.search.utils.AppUtil;
-import com.android.sichard.search.utils.DrawUtils;
 
 import java.util.ArrayList;
 import java.util.List;

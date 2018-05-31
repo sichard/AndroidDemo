@@ -11,10 +11,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.android.sichard.common.utils.DrawUtils;
 import com.android.sichard.search.R;
 import com.android.sichard.search.data.hotSite.HotSiteInfo;
 import com.android.sichard.search.data.hotgame.HotGameInfo;
-import com.android.sichard.search.utils.DrawUtils;
 
 import java.util.ArrayList;
 import java.util.List;
