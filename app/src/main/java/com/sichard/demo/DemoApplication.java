@@ -3,8 +3,8 @@ package com.sichard.demo;
 import android.app.Application;
 
 import com.android.sichard.common.framework.SingletonBase;
+import com.android.sichard.common.utils.DrawUtils;
 import com.android.sichard.search.SearchSDK;
-import com.android.sichard.search.utils.DrawUtils;
 
 /**
  * <br>类描述:Demo的Application实例

@@ -88,6 +88,15 @@
         </activity>
 
         <activity
+            android:name=".view.waveview.BesselWaveViewActivity"
+            android:label="@string/activity_bessel_wave">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".screen.ScreenPropertyActivity"
             android:label="@string/activity_screen_property">
             <intent-filter>
