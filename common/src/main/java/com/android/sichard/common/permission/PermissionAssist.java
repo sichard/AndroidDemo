@@ -95,12 +95,12 @@ public class PermissionAssist {
         if (!IS_MARSHMALLOW) {
             return true;
         }
-        String[] unPermissions = checkPermission(activity, false, permissions);
+        final String[] unPermissions = checkPermission(activity, false, permissions);
         if (unPermissions != null && unPermissions.length != 0) {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    requestPermission(activity, permissionListener, permissions);
+                    requestPermission(activity, permissionListener, unPermissions);
                 }
             }, intervalTime);
             return false;

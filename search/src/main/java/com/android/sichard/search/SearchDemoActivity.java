@@ -2,6 +2,9 @@ package com.android.sichard.search;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+
+import com.android.sichard.common.permission.PermissionAssist;
 
 public class SearchDemoActivity extends Activity {
 
@@ -10,6 +13,12 @@ public class SearchDemoActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search_view);
         SearchSDK.getInstance().checkPermission(this);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        PermissionAssist.newInstance(requestCode).permissionResult(requestCode, permissions, grantResults);
     }
 
     @Override

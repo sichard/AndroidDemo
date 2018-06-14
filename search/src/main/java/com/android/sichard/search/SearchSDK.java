@@ -70,7 +70,6 @@ public class SearchSDK {
                 mSearchManager = new SearchAppManager(mContext);
             }
         });
-        initProvider();
     }
 
     /**
@@ -179,9 +178,10 @@ public class SearchSDK {
                 for (String permission : permissions) {
                     if (permission.equals(Manifest.permission.READ_CONTACTS)) {
                         scanContactDelayed();
-                    }
-                    if (permission.equals(Manifest.permission.READ_SMS)) {
+                    } else if (permission.equals(Manifest.permission.READ_SMS)) {
                         scanMessageDelayed();
+                    } else if (permission.equals(Manifest.permission.READ_CALL_LOG)) {
+                        initProvider();
                     }
                 }
             }
@@ -195,7 +195,7 @@ public class SearchSDK {
             public void onFailure(int requestCode, String[] permission) {
 
             }
-        }, 1 * 1000, android.Manifest.permission.READ_CONTACTS, Manifest.permission.READ_SMS);
+        }, 1000, Manifest.permission.READ_CALL_LOG, android.Manifest.permission.READ_CONTACTS, Manifest.permission.READ_SMS);
         if (isHavePermission) {
             scanContactDelayed();
             scanMessageDelayed();

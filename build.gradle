@@ -35,6 +35,13 @@ subprojects { subproject ->
     }
 }
 
+//强制使用指定版本编译
+//configurations.all {
+//    resolutionStrategy {
+//        force 'com.android.support:support-v4:25.3.1'
+//    }
+//}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
