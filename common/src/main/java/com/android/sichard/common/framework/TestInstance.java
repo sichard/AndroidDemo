@@ -9,13 +9,19 @@ import android.util.Log;
  * <br><b>Date 18-5-18</b>
  */
 public class TestInstance extends SingletonBase {
-    private static volatile TestInstance sInstance;
+    private static TestInstance sInstance;
     private TestInstance() {
-        sContext.getResources();
+//        long start = System.currentTimeMillis();
+//        for (long i = 0; i < 100000000L; i++) {
+//        }
+//        long end = System.currentTimeMillis();
+//        Log.e("sichardcao", "TestInstance|TestInstance:" + (end - start));
     }
 
     public static TestInstance getInstance() {
-        sInstance = instance(TestInstance.class);
+        if (sInstance == null) {
+            sInstance = instance(TestInstance.class);
+        }
         return sInstance;
     }
 
@@ -24,8 +30,11 @@ public class TestInstance extends SingletonBase {
         super.release();
     }
 
-    public void test(String i) {
-        Log.i("sichard", "TestInstance|test: Thread " + i + this.toString());
+    public void test(String name) {
+        StringBuffer buffer = new StringBuffer(name);
+        buffer.append(" = ");
+        buffer.append(this.toString());
+        Log.i("sichardcao", "TestInstance|test: Thread " + buffer);
     }
 
 }

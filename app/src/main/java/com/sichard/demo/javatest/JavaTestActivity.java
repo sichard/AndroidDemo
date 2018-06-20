@@ -26,10 +26,14 @@ public class JavaTestActivity extends BaseActivity {
 //                Log.i("sichard", "JavaTestActivity|run:" + SampleDCLInstance.getInstance().toString());
 //                Log.i("sichard", "JavaTestActivity|run:" + SingletonBase.instance(TestInstance.class).toString());
                     TestInstance.getInstance().test(Thread.currentThread().getName());
+//                    SingletonBase.destroy(TestInstance.getInstance());
 
                 }
             }, "thread " + i).start();
         }
+
+//        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+//        Log.i("sichardcao", "JavaTestActivity|onCreate:" + format.format(new Date()));
     }
 
     @Override
