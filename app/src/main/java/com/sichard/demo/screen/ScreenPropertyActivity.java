@@ -112,6 +112,9 @@ public class ScreenPropertyActivity extends BaseActivity {
         sb.append("\n");
         sb.append("Stream Volume(current/max):");
         sb.append(current + "/" + max);
+        sb.append("\n");
+        sb.append("Version/API:");
+        sb.append(Build.VERSION.RELEASE + "/" + Build.VERSION.SDK_INT);
         mTextView.setText(sb.toString());
 
         createJson();
