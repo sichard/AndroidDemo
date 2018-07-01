@@ -41,7 +41,7 @@ repositories {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation dep.appcompatV7
     implementation dep.supportV4
     //编译OkHttp模块
@@ -49,4 +49,6 @@ dependencies {
     //编译fastJson(解析天气返回Json数据)
     implementation 'com.alibaba:fastjson:1.2.14'
     implementation project(path: ':common')
+    implementation dep.rxJava
+    implementation dep.rxAndroid
 }
