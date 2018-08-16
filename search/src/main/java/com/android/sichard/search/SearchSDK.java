@@ -192,7 +192,7 @@ public class SearchSDK {
             }
 
             @Override
-            public void onFailure(int requestCode, String[] permission) {
+            public void onFailure(int requestCode, String[] permissions) {
 
             }
         }, 1000, Manifest.permission.READ_CALL_LOG, android.Manifest.permission.READ_CONTACTS, Manifest.permission.READ_SMS);

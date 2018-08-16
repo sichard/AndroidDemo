@@ -30,7 +30,7 @@ public class WeatherActivity extends BaseActivity {
         } else {
             PermissionAssist.newInstance(PermissionConstant.PERMISSION_ALL).requestPermission(this, new PermissionAssist.PermissionListener() {
                 @Override
-                public void onSuccess(int requestCode, String[] permission) {
+                public void onSuccess(int requestCode, String[] permissions) {
                     setContentView(R.layout.weather_widget);
                 }
 
@@ -40,7 +40,7 @@ public class WeatherActivity extends BaseActivity {
                 }
 
                 @Override
-                public void onFailure(int requestCode, String[] permission) {
+                public void onFailure(int requestCode, String[] permissions) {
                     Toast.makeText(WeatherActivity.this, "请允许定位权限,以便获取天气", Toast.LENGTH_SHORT).show();
                 }
             }, permissions);

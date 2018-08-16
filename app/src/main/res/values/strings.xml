@@ -17,6 +17,7 @@
     <string name="activity_list_view_drag_slide">View/ListView/Drag Slide ListView</string>
     <string name="activity_sine_wave">View/Wave/SineWaveView</string>
     <string name="activity_bessel_wave">View/Wave/BesselWaveView</string>
+    <string name="activity_image_view_property">View/ImageView/ImageViewProperty</string>
 
 
     <!--屏幕属性-->

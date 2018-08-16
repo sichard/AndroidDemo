@@ -176,10 +176,10 @@ public class PermissionAssist {
      * 权限返回结果监听
      */
     public interface PermissionListener {
-        void onSuccess(int requestCode, String[] permission);
+        void onSuccess(int requestCode, String[] permissions);
 
         void finish(int requestCode, String[] permissions);
 
-        void onFailure(int requestCode, String[] permission);
+        void onFailure(int requestCode, String[] permissions);
     }
 }

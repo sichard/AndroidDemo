@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.FragmentActivity;
 import android.widget.Toast;
@@ -36,8 +37,7 @@ public class ScreenshotActivity extends FragmentActivity {
     private void requestSdCardPermission() {
         PermissionAssist.newInstance(PermissionConstant.PERMISSION_READ_WRITE_STORAGE).requestPermission(this, new PermissionAssist.PermissionListener() {
             @Override
-            public void onSuccess(int requestCode, String[] permission) {
-
+            public void onSuccess(int requestCode, String[] permissions) {
             }
 
             @Override
@@ -46,8 +46,7 @@ public class ScreenshotActivity extends FragmentActivity {
             }
 
             @Override
-            public void onFailure(int requestCode, String[] permission) {
-
+            public void onFailure(int requestCode, String[] permissions) {
             }
         }, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE);
     }
@@ -99,4 +98,9 @@ public class ScreenshotActivity extends FragmentActivity {
         }
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        PermissionAssist.newInstance(PermissionConstant.PERMISSION_READ_WRITE_STORAGE).permissionResult(requestCode, permissions, grantResults);
+    }
 }
