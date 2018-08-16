@@ -3,8 +3,8 @@ ext {
     retrofitVersion = "2.1.0"
     supportLibrariesVersion = '27.1.1'
     constraintLayoutVersion = '1.1.0'
-    rxJavaVersion = "2.1.16"
-    rxAndroidVersion = "1.2.1"
+    rxJavaVersion = "2.2.2"
+    rxAndroidVersion = "2.2.0"
 
     dep = [
             compileSdkVersion : 26,
@@ -28,6 +28,6 @@ ext {
             junit             : 'junit:junit:4.12',
 
             rxJava            : "io.reactivex.rxjava2:rxjava:$rxJavaVersion",
-            rxAndroid         : "io.reactivex:rxandroid:$rxAndroidVersion",
+            rxAndroid         : "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion",
     ]
 }

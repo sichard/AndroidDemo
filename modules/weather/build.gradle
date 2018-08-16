@@ -1,0 +1,54 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion dep.compileSdkVersion
+    buildToolsVersion dep.buildToolsVersion
+
+
+    defaultConfig {
+        minSdkVersion dep.minSdkVersion
+        targetSdkVersion dep.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //服务器辅助定位正式版本地址
+            buildConfigField("String", "COORDINATE_URL", "\"https://launcher-test.tclclouds.com/tlauncher-api/api/getlocation\"")
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //服务器辅助定位正式版本地址
+            buildConfigField("String", "COORDINATE_URL", "\"https://tlauncher-api.tclclouds.com/tlauncher-api/api/getlocation\"")
+        }
+    }
+
+}
+
+repositories {
+    flatDir {
+
+        dirs 'libs', '../app/libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation dep.appcompatV7
+    implementation dep.supportV4
+    //编译OkHttp模块
+    implementation dep.okhttp3
+    //编译fastJson(解析天气返回Json数据)
+    implementation 'com.alibaba:fastjson:1.2.14'
+    implementation project(path: ':common')
+//    implementation dep.rxJava
+//    implementation dep.rxAndroid
+}

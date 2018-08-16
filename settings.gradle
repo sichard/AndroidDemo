@@ -1,1 +1,22 @@
-include ':app', ':common', ':weather', ':battersaver',':cpucool',':search',':lockscreen',':screenshot'
+include ':app'
+
+include ':screenshot'
+project(':screenshot').projectDir = new File(rootProject.projectDir, '/modules/screenshot')
+
+include ':search'
+project(':search').projectDir = new File(rootProject.projectDir, '/modules/search')
+
+include ':weather'
+project(':weather').projectDir = new File(rootProject.projectDir, '/modules/weather')
+
+include ':lockscreen'
+project(':lockscreen').projectDir = new File(rootProject.projectDir, '/modules/lockscreen')
+
+include ':cpucool'
+project(':cpucool').projectDir = new File(rootProject.projectDir, '/modules/cpucool')
+
+include ':battersaver'
+project(':battersaver').projectDir = new File(rootProject.projectDir, '/modules/battersaver')
+
+include ':common'
+project(':common').projectDir = new File(rootProject.projectDir, '/modules/common')
