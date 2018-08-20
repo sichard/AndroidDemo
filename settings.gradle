@@ -1,4 +1,4 @@
-include ':app'
+include ':app', ':screenshotedit'
 
 include ':screenshot'
 project(':screenshot').projectDir = new File(rootProject.projectDir, '/modules/screenshot')
@@ -20,3 +20,6 @@ project(':battersaver').projectDir = new File(rootProject.projectDir, '/modules/
 
 include ':common'
 project(':common').projectDir = new File(rootProject.projectDir, '/modules/common')
+
+include ':screenshotedit'
+project(':screenshotedit').projectDir = new File(rootProject.projectDir, '/modules/screenshotedit')

@@ -3,8 +3,8 @@ ext {
     retrofitVersion = "2.1.0"
     supportLibrariesVersion = '27.1.1'
     constraintLayoutVersion = '1.1.0'
-    rxJavaVersion = "2.2.2"
-    rxAndroidVersion = "2.2.0"
+    rxJavaVersion = "2.2.0"
+    rxAndroidVersion = "2.1.0"
 
     dep = [
             compileSdkVersion : 26,

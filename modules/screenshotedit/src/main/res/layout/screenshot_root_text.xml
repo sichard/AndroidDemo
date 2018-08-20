@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.sichard.screenshotedit.view.ScreenshotTextRootView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--包裹LinearLayout 的原因是 当子View高度不足以填充父view整个高度时，子View能够居中-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.android.sichard.screenshotedit.view.ScreenshotTextView
+            android:id="@+id/photoEditorView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</com.android.sichard.screenshotedit.view.ScreenshotTextRootView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlyt_dialog_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF0F0F0"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/screenshot_title_color"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/screenshot_edit_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:src="@mipmap/screenshot_edit_cancel" />
+
+        <ImageView
+            android:id="@+id/screenshot_edit_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="28dp"
+            android:src="@mipmap/screenshot_edit_ok" />
+
+    </RelativeLayout>
+
+    <!--键盘只是顶起这个布局，加入 layout_alignParentBottom 才生效-->
+    <RelativeLayout
+        android:id="@+id/add_text_color_picker_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/screenshot_title_color"
+        >
+        <include
+            android:id="@+id/screenshot_text_bar"
+            layout="@layout/screenshot_edit_bar" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/add_text_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_text_color_picker_relative_layout"
+        android:background="@null"
+        android:hint="input text"
+        android:inputType="textMultiLine"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="40sp" />
+
+
+</RelativeLayout>

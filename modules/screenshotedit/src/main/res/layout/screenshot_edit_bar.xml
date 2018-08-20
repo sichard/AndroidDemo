@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.sichard.screenshotedit.view.ScreenshotColorView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/screenshot_title_color"
+    tools:showIn="@layout/screenshot_dialog_add_text">
+
+    <ImageView
+        android:id="@+id/screenshot_edit_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:src="@mipmap/screenshot_graffiti_selected" />
+
+    <ImageView
+        android:id="@+id/screenshot_white"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="31dp"
+        android:layout_weight="1"
+        android:scaleType="center"
+        android:src="@drawable/screenshot_white" />
+
+    <ImageView
+        android:id="@+id/screenshot_black"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_weight="1"
+        android:scaleType="center"
+        android:src="@drawable/screenshot_black" />
+
+    <ImageView
+        android:id="@+id/screenshot_red"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_weight="1"
+        android:scaleType="center"
+        android:src="@drawable/screenshot_red_select" />
+
+    <ImageView
+        android:id="@+id/screenshot_yellow"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_weight="1"
+        android:scaleType="center"
+        android:src="@drawable/screenshot_yellow" />
+
+    <ImageView
+        android:id="@+id/screenshot_blue"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_weight="1"
+        android:scaleType="center"
+        android:src="@drawable/screenshot_blue" />
+
+    <ImageView
+        android:id="@+id/screenshot_green"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="36dp"
+        android:layout_weight="1"
+        android:scaleType="center"
+        android:src="@drawable/screenshot_green" />
+
+</com.android.sichard.screenshotedit.view.ScreenshotColorView>

@@ -5,6 +5,8 @@ buildscript {
     
     repositories {
         google()
+        //国内阿里镜像
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
         jcenter()
     }
     dependencies {
@@ -19,6 +21,8 @@ buildscript {
 allprojects {
     repositories {
         google()
+        //国内阿里镜像
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
         jcenter()
     }
 }

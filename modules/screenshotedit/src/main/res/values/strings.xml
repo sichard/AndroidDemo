@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">screenshotedit</string>
+    <string name="default_search">Default Search(recommend)</string>
+    <string name="screenshot_exit_edit">Whether to exit the screen capture editing</string>
+    <string name="screenshot_confirm">Confirm</string>
+    <string name="screenshot_cancel">Cancel</string>
+    <string name="screenshot_save_path">Saved to %1$s</string>
+    <string name="screen_shot_edit">Edit</string>
+    <string name="save_pic">Saving…</string>
+</resources>

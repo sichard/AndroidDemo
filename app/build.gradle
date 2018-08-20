@@ -33,4 +33,5 @@ dependencies {
     implementation project(':search')
     implementation project(':lockscreen')
     implementation project(':screenshot')
+    implementation project(':screenshotedit')
 }

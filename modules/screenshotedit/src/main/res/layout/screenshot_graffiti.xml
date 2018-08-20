@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.sichard.screenshotedit.view.ScreenshotGraffitiEditView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!--这里需要在涂鸦View外包一层填充View，否则不能满足涂鸦View填充满编辑View的需求-->
+        <com.android.sichard.screenshotedit.view.ScreenshotGraffitiView
+            android:id="@+id/screenshot_graffiti_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true" />
+    </FrameLayout>
+
+    <include
+        android:id="@+id/screenshot_graffiti_bar"
+        layout="@layout/screenshot_edit_bar" />
+</com.android.sichard.screenshotedit.view.ScreenshotGraffitiEditView>
