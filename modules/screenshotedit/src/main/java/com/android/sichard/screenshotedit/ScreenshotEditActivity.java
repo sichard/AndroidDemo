@@ -213,6 +213,7 @@ public class ScreenshotEditActivity extends FragmentActivity implements View.OnC
     }
 
     private void changeEditView(View view) {
+        mBtOk.setImageResource(R.mipmap.screenshot_edit_ok);
         mBtCancel.setImageResource(R.mipmap.screenshot_edit_cancel);
         mScreenshotPreview.setVisibility(View.GONE);
         mContainerView.addView(view);
@@ -221,6 +222,7 @@ public class ScreenshotEditActivity extends FragmentActivity implements View.OnC
     }
 
     private void changeEditViewWithColorBar(View view) {
+        mBtOk.setImageResource(R.mipmap.screenshot_edit_ok);
         mBtCancel.setImageResource(R.mipmap.screenshot_edit_cancel);
         mScreenshotEditPreview.setVisibility(View.GONE);
         mRootContainer.addView(view);
@@ -363,6 +365,7 @@ public class ScreenshotEditActivity extends FragmentActivity implements View.OnC
         mBtCrop.setImageResource(R.mipmap.screenshot_crop);
         mBtText.setImageResource(R.mipmap.screenshot_text);
         mBtCancel.setImageResource(R.mipmap.screenshot_back);
+        mBtOk.setImageResource(R.mipmap.screenshot_save);
     }
 
     @Override

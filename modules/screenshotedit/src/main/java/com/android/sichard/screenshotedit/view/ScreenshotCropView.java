@@ -432,10 +432,10 @@ public class ScreenshotCropView extends AppCompatImageView implements IScreensho
                         mLeft = mLeft + curX - mPreX;
                         mBottom = mBottom + curY - mPreY;
 
-                        // 判断是否接近左边框
+                        // 判断是否接近右边框
                         if (mRight - mLeft < RANGE) {
-                            mRight = mLeft + RANGE;
-                            curX = mRight;
+                            mLeft = mRight - RANGE;
+                            curX = mLeft;
                         }
                         // 判断是否接近上边框
                         if (mBottom - mTop < RANGE) {

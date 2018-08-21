@@ -27,7 +27,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="28dp"
             android:onClick="onClick"
-            android:src="@mipmap/screenshot_edit_ok" />
+            android:src="@mipmap/screenshot_save" />
 
     </RelativeLayout>
 
