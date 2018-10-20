@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sichard.demo.specialeffects.view.FloatView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="262dp"
+    android:background="#545454">
+
+    <TextView
+        android:id="@+id/float_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="你可以这样说"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/float_text1"
+        style="@style/float_text_style"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="小P小P，来首周杰伦的歌" />
+
+    <TextView
+        android:id="@+id/float_text2"
+        style="@style/float_text_style"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="65dp"
+        android:text="22222222222" />
+
+    <TextView
+        android:id="@+id/float_text3"
+        style="@style/float_text_style"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="94dp"
+        android:text="3333333333333" />
+
+    <TextView
+        android:id="@+id/float_text4"
+        style="@style/float_text_style"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="91dp"
+        android:layout_marginStart="29dp"
+        android:text="444444444444" />
+
+    <TextView
+        android:id="@+id/float_text5"
+        style="@style/float_text_style"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="92dp"
+        android:layout_marginEnd="45dp"
+        android:text="55555555" />
+
+</com.sichard.demo.specialeffects.view.FloatView>

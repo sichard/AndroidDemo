@@ -135,6 +135,7 @@ public class ScreenshotCropView extends AppCompatImageView implements IScreensho
      *
      * @param bitmap
      */
+    @Override
     public void setBitmap(Bitmap bitmap) {
         mBitmap = bitmap;
         View parent = (View) getParent();
@@ -537,6 +538,7 @@ public class ScreenshotCropView extends AppCompatImageView implements IScreensho
 //        canvas.drawCircle(mLeft +(mRight - mLeft)/2, mBottom, RADIUS, mFramePaint);
     }
 
+    @Override
     public Bitmap getBitmap() {
         int bitmapWidth = mBitmap.getWidth();
         int bitmapHeight = mBitmap.getHeight();

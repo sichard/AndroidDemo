@@ -30,6 +30,7 @@ public class CustomView extends View {
 		super.onDraw(canvas);
 		mPaint.setColor(Color.RED);
 		canvas.drawCircle(300, 500, 10, mPaint);
+		canvas.drawCircle(600, 1000, 10, mPaint);
 	}
 
 }

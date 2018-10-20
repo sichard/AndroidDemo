@@ -18,6 +18,7 @@
     <string name="activity_sine_wave">View/Wave/SineWaveView</string>
     <string name="activity_bessel_wave">View/Wave/BesselWaveView</string>
     <string name="activity_image_view_property">View/ImageView/ImageViewProperty</string>
+    <string name="activity_xfermode_view">View/XfermodeView</string>
 
 
     <!--屏幕属性-->
@@ -28,6 +29,11 @@
     <!--特效相关-->
     <string name="activity_path_animation">Special Effect/Path Animation</string>
     <string name="activity_ripple">Special Effect/Ripple</string>
+    <string name="activity_float">Special Effect/Float/FloatAnimation</string>
+    <string name="activity_float_bubble">Special Effect/Float/Float Bubble</string>
+    <string name="activity_float_text">Special Effect/Float/Float Text</string>
+    <string name="activity_ball_bounce">Special Effect/Ball Bounce</string>
+    <string name="activity_fairy_path_animation">Special Effect/Fairy Path Animation</string>
     <!--项目相关-->
     <string name="activity_weather">Project/AccuWeather</string>
     <string name="activity_cpu_cool">Project/CPU Cool</string>

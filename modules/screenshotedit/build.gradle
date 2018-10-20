@@ -1,13 +1,13 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 924
+    compileSdkVersion dep.compileSdkVersion
 
 
 
     defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 924
+        minSdkVersion dep.minSdkVersion
+        targetSdkVersion dep.compileSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -31,7 +31,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    compile project(path: ':common')
-    compile dep.rxJava
+    implementation project(path: ':common')
+    implementation dep.rxJava
     implementation dep.rxAndroid
 }

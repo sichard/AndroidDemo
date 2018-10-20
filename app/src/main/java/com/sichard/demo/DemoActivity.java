@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -173,5 +174,29 @@ public class DemoActivity extends BaseActivity implements AdapterView.OnItemClic
         Intent intent = new Intent((Intent) map.get("intent"));
         intent.addCategory(Intent.CATEGORY_SAMPLE_CODE);
         startActivity(intent);
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.i("sichardcao", "DemoActivity|onRestart:" + "+++++++++");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i("sichardcao", "DemoActivity|onResume:" + "++++++++++++++");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("sichardcao", "DemoActivity|onPause:" + "==========");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.e("sichardcao", "DemoActivity|onStop: " + "============");
     }
 }

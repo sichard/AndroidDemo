@@ -10,7 +10,7 @@ ext {
             compileSdkVersion : 26,
             buildToolsVersion : '27.0.3',
             targetSdkVersion  : 26,
-            minSdkVersion     : 21,
+            minSdkVersion     : 19,
 
             androidPlugin     : 'com.android.tools.build:gradle:2.2.3',
             supportV4         : "com.android.support:support-v4:$supportLibrariesVersion",

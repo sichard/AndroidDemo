@@ -17,4 +17,16 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="float_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">37dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#CCFFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@drawable/bg_float_text</item>
+    </style>
+
 </resources>
