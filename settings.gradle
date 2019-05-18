@@ -1,4 +1,4 @@
-include ':app', ':screenshotedit'
+include ':app'
 
 include ':screenshot'
 project(':screenshot').projectDir = new File(rootProject.projectDir, '/modules/screenshot')
@@ -23,3 +23,6 @@ project(':common').projectDir = new File(rootProject.projectDir, '/modules/commo
 
 include ':screenshotedit'
 project(':screenshotedit').projectDir = new File(rootProject.projectDir, '/modules/screenshotedit')
+
+include ':retrofit'
+project(':retrofit').projectDir = new File(rootProject.projectDir, '/modules/retrofit')

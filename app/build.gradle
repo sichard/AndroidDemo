@@ -2,6 +2,8 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion dep.compileSdkVersion
+    buildToolsVersion dep.buildToolsVersion
+
     defaultConfig {
         applicationId "com.sichard.demo"
         minSdkVersion dep.minSdkVersion
@@ -34,4 +36,5 @@ dependencies {
     implementation project(':lockscreen')
     implementation project(':screenshot')
     implementation project(':screenshotedit')
+    implementation project(':retrofit')
 }
