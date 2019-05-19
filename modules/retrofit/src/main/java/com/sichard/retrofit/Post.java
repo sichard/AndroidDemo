@@ -2,7 +2,7 @@ package com.sichard.retrofit;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Posts {
+public class Post {
     @SerializedName("userId")
     private int userId;
     @SerializedName("id")

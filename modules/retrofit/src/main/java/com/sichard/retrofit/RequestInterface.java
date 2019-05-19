@@ -14,8 +14,8 @@ import retrofit2.http.GET;
  */
 public interface RequestInterface {
     @GET("/posts")
-    Call<List<Posts>> index();
+    Call<List<Post>> index();
 
     @GET("/posts")
-    Observable<List<Posts>> indexToRxJava();
+    Observable<List<Post>> indexToRxJava();
 }

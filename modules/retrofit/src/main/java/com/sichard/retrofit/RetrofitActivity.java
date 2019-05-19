@@ -49,15 +49,15 @@ public class RetrofitActivity extends BaseActivity {
         mView = view;
         Retrofit retrofit = RequestManger.getInstance().getRetrofit();
         final RequestInterface requestInterface = retrofit.create(RequestInterface.class);
-        requestInterface.index().enqueue(new Callback<List<Posts>>() {
+        requestInterface.index().enqueue(new Callback<List<Post>>() {
             @Override
-            public void onResponse(@NonNull Call<List<Posts>> call, @NonNull Response<List<Posts>> response) {
-                List<Posts> postsList = response.body();
-                showResult(postsList);
+            public void onResponse(@NonNull Call<List<Post>> call, @NonNull Response<List<Post>> response) {
+                List<Post> postList = response.body();
+                showResult(postList);
             }
 
             @Override
-            public void onFailure(@NonNull Call<List<Posts>> call, @NonNull Throwable t) {
+            public void onFailure(@NonNull Call<List<Post>> call, @NonNull Throwable t) {
 
             }
         });
@@ -68,12 +68,12 @@ public class RetrofitActivity extends BaseActivity {
      */
     public void requestRxJava(View view) {
         mView = view;
-        Observable.create(new ObservableOnSubscribe<List<Posts>>() {
+        Observable.create(new ObservableOnSubscribe<List<Post>>() {
             @Override
-            public void subscribe(ObservableEmitter<List<Posts>> emitter) throws Exception {
+            public void subscribe(ObservableEmitter<List<Post>> emitter) throws Exception {
                 Retrofit retrofit = RequestManger.getInstance().getRetrofit();
-                Call<List<Posts>> index = retrofit.create(RequestInterface.class).index();
-                Response<List<Posts>> response = index.execute();
+                Call<List<Post>> index = retrofit.create(RequestInterface.class).index();
+                Response<List<Post>> response = index.execute();
                 if (response != null && response.isSuccessful()) {
                     emitter.onNext(response.body());
                 }
@@ -90,16 +90,16 @@ public class RetrofitActivity extends BaseActivity {
      */
     public void requestRetrofitRxJava(View view) {
         mView = view;
-        Observable<List<Posts>> observable = RequestManger.getInstance().getRetrofit().create(RequestInterface.class).indexToRxJava();
+        Observable<List<Post>> observable = RequestManger.getInstance().getRetrofit().create(RequestInterface.class).indexToRxJava();
         observable.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new ResultObserver());
     }
 
-    private void showResult(List<Posts> posts) {
+    private void showResult(List<Post> posts) {
         StringBuilder builder = new StringBuilder();
         if (posts != null) {
-            for (Posts post : posts) {
+            for (Post post : posts) {
                 builder.append(post.getBody());
                 builder.append("\n---------------------\n");
             }
@@ -119,14 +119,14 @@ public class RetrofitActivity extends BaseActivity {
         mTextView.setText(builder.toString());
     }
 
-    private class ResultObserver implements Observer<List<Posts>> {
+    private class ResultObserver implements Observer<List<Post>> {
         @Override
         public void onSubscribe(Disposable d) {
 
         }
 
         @Override
-        public void onNext(List<Posts> posts) {
+        public void onNext(List<Post> posts) {
             showResult(posts);
         }
 
