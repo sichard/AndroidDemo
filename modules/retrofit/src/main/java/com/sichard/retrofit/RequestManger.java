@@ -1,6 +1,8 @@
 package com.sichard.retrofit;
 
 
+import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
+
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -27,11 +29,12 @@ public class RequestManger {
         mRetrofit = new Retrofit.Builder()
                 .baseUrl(Config.URL)
                 .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(okHttpClient)
                 .build();
     }
 
-    public Retrofit getmRetrofit() {
+    public Retrofit getRetrofit() {
         return mRetrofit;
     }
 

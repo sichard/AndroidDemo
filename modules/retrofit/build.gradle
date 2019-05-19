@@ -7,8 +7,8 @@ android {
 
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 27
+        minSdkVersion dep.minSdkVersion
+        targetSdkVersion dep.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -32,6 +32,9 @@ dependencies {
     implementation project(':common')
     implementation dep.retrofit2
     implementation dep.retrofit2Gson
+    implementation dep.retrofit2RxJava
+    implementation dep.rxJava
+    implementation dep.rxAndroid
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

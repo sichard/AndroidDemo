@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,19 +7,41 @@
     tools:context="com.sichard.retrofit.RetrofitActivity">
 
     <Button
-        android:id="@+id/send_data"
+        android:id="@+id/retrofit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="loadData"
-        android:text="call api" />
+        android:background="#ffff0000"
+        android:onClick="requestRetrofit"
+        android:tag="1"
+        android:text="Retrofit"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/rx_java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/retrofit"
+        android:background="#ff00ff00"
+        android:onClick="requestRxJava"
+        android:tag="2"
+        android:text="RxJava"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/rx_java_and_retrofit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/rx_java"
+        android:background="#ff0000ff"
+        android:onClick="requestRetrofitRxJava"
+        android:tag="3"
+        android:text="RxJavaRetrofit"
+        android:textColor="#ffffff" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/send_data">
+        android:layout_below="@+id/retrofit">
 
         <TextView
             android:id="@+id/info"
@@ -27,5 +49,4 @@
             android:layout_height="wrap_content" />
     </ScrollView>
 
-
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

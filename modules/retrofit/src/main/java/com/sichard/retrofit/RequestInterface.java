@@ -2,6 +2,7 @@ package com.sichard.retrofit;
 
 import java.util.List;
 
+import io.reactivex.Observable;
 import retrofit2.Call;
 import retrofit2.http.GET;
 
@@ -14,4 +15,7 @@ import retrofit2.http.GET;
 public interface RequestInterface {
     @GET("/posts")
     Call<List<Posts>> index();
+
+    @GET("/posts")
+    Observable<List<Posts>> indexToRxJava();
 }
