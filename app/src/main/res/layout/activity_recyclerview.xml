@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8080d2">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ItemDecoration"
+        android:onClick="onClick"/>
+
+    <com.sichard.demo.view.recyclerview.viewpager.SmallCardView
+        android:id="@+id/smallCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.sichard.demo.view.recyclerview.viewpager.BigCardContainerView
+        android:id="@+id/big_card_container_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.sichard.demo.view.recyclerview.viewpager.BigCardView
+            android:id="@+id/big_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <VideoView
+            android:id="@+id/big_card_video_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/big_card_close_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_close_line"
+            tools:ignore="ContentDescription" />
+
+    </com.sichard.demo.view.recyclerview.viewpager.BigCardContainerView>
+
+
+</android.support.constraint.ConstraintLayout>

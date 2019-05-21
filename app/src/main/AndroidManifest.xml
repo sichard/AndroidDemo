@@ -25,6 +25,14 @@
         </activity>
 
         <activity
+            android:name=".androidtest.AndroidTestActivity"
+            android:label="@string/activity_android_test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".javatest.JavaTestActivity"
             android:label="@string/activity_java_test">
             <intent-filter>
@@ -115,6 +123,15 @@
         </activity>
 
         <activity
+            android:name=".view.recyclerview.viewpager.RecyclerViewActivity"
+            android:label="@string/activity_recycler_view">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".screen.ScreenPropertyActivity"
             android:label="@string/activity_screen_property">
             <intent-filter>
@@ -144,6 +161,15 @@
         <activity
             android:name=".specialeffects.PathAnimationActivity"
             android:label="@string/activity_path_animation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".animation.AnimationAnimatorActivity"
+            android:label="@string/activity_animation_animator">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />
@@ -254,6 +280,15 @@
         <activity
             android:name=".specialeffects.surface.pathanimation.FairyPathAnimationActivity"
             android:label="@string/activity_fairy_path_animation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".screen.BitmapTestActivity"
+            android:label="@string/bitmap_test">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.SAMPLE_CODE" />

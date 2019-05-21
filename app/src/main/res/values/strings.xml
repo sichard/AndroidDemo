@@ -5,10 +5,13 @@
 
     <!--Java测试activity-->
     <string name="activity_java_test">JavaTest</string>
+    <!--AndroidTest测试activity-->
+    <string name="activity_android_test">AndroidTest</string>
     <!--动画相关的activity-->
     <string name="activity_animation_base">Animation/BaseAnimation</string>
     <string name="activity_value_animation">Animation/Value Animation</string>
     <string name="activity_custom_value_animation">Animation/Custom Value Animation</string>
+    <string name="activity_animation_animator">Animation/Animation &amp; Animator</string>
 
     <!--view相关-->
     <string name="activity_list_view_drag">View/ListView/Drag ListView</string>
@@ -19,6 +22,7 @@
     <string name="activity_bessel_wave">View/Wave/BesselWaveView</string>
     <string name="activity_image_view_property">View/ImageView/ImageViewProperty</string>
     <string name="activity_xfermode_view">View/XfermodeView</string>
+    <string name="activity_recycler_view">View/RecyclerView</string>
 
 
     <!--屏幕属性-->
@@ -26,6 +30,7 @@
     <string name="scale">scale</string>
     <string name="object">object</string>
     <string name="value">value</string>
+    <string name="bitmap_test">Bitmap</string>
     <!--特效相关-->
     <string name="activity_path_animation">Special Effect/Path Animation</string>
     <string name="activity_ripple">Special Effect/Ripple</string>

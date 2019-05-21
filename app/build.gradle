@@ -37,4 +37,5 @@ dependencies {
     implementation project(':screenshot')
     implementation project(':screenshotedit')
     implementation project(':retrofit')
+    implementation dep.glide
 }

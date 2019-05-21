@@ -3,4 +3,8 @@
 
     <!--悬浮view-->
     <dimen name="float_text_corner_size">18dp</dimen>
+
+    <!--RecyclerView-->
+    <dimen name="small_card_item_width">96dp</dimen>
+    <dimen name="small_card_item_height">160dp</dimen>
 </resources>
