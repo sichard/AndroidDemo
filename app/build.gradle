@@ -34,7 +34,7 @@ dependencies {
     implementation project(':battersaver')
     implementation project(':search')
     implementation project(':lockscreen')
-    implementation project(':screenshot')
+    implementation project(':modules:screenshot')
     implementation project(':modules:screenshotedit')
     implementation project(':modules:retrofit')
     implementation dep.glide

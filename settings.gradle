@@ -1,8 +1,5 @@
 include ':app', ':javatest'
 
-include ':screenshot'
-project(':screenshot').projectDir = new File(rootProject.projectDir, '/modules/screenshot')
-
 include ':search'
 project(':search').projectDir = new File(rootProject.projectDir, '/modules/search')
 
@@ -20,6 +17,8 @@ project(':battersaver').projectDir = new File(rootProject.projectDir, '/modules/
 
 include ':common'
 project(':common').projectDir = new File(rootProject.projectDir, '/modules/common')
+
+include ':modules:screenshot'
 
 include ':modules:screenshotedit'
 
