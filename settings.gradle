@@ -21,8 +21,6 @@ project(':battersaver').projectDir = new File(rootProject.projectDir, '/modules/
 include ':common'
 project(':common').projectDir = new File(rootProject.projectDir, '/modules/common')
 
-include ':screenshotedit'
-project(':screenshotedit').projectDir = new File(rootProject.projectDir, '/modules/screenshotedit')
+include ':modules:screenshotedit'
 
-include ':retrofit'
-project(':retrofit').projectDir = new File(rootProject.projectDir, '/modules/retrofit')
+include ':modules:retrofit'
