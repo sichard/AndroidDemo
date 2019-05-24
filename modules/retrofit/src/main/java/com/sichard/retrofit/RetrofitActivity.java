@@ -17,9 +17,7 @@ import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
-import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -79,10 +77,8 @@ public class RetrofitActivity extends BaseActivity {
                 }
                 emitter.onComplete();
             }
-        }).subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new ResultObserver() {
-                });
+        }).compose(RxTransformerHelper.<List<Post>>observableIO2Main())
+                .subscribe(new ResultObserver() {});
     }
 
     /**
@@ -90,9 +86,10 @@ public class RetrofitActivity extends BaseActivity {
      */
     public void requestRetrofitRxJava(View view) {
         mView = view;
-        Observable<List<Post>> observable = RequestManger.getInstance().getRetrofit().create(RequestInterface.class).indexToRxJava();
-        observable.subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
+        RequestManger.getInstance().getRetrofit()
+                .create(RequestInterface.class)
+                .indexToRxJava()
+                .compose(RxTransformerHelper.<List<Post>>observableIO2Main())
                 .subscribe(new ResultObserver());
     }
 
