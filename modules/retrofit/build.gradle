@@ -28,7 +28,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation dep.appcompatV7
     implementation project(':common')
     implementation dep.retrofit2
     implementation dep.retrofit2Gson

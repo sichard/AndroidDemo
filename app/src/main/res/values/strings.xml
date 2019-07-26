@@ -46,4 +46,5 @@
     <string name="activity_search">Project/Search</string>
     <string name="activity_lock_screen">Project/Lock Screen</string>
     <string name="activity_retrofit">Project/Retrofit</string>
+    <string name="activity_gpu_input">Project/ProfileGpuRendering</string>
 </resources>

@@ -6,6 +6,7 @@ ext {
     rxJavaVersion = "2.2.0"
     rxAndroidVersion = "2.1.0"
     glideVersion = "4.8.0"
+    butterknife = "8.8.1"
 
     dep = [
             compileSdkVersion : 26,
@@ -37,5 +38,9 @@ ext {
             rxJava            : "io.reactivex.rxjava2:rxjava:$rxJavaVersion",
             rxAndroid         : "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion",
             glide         : "com.github.bumptech.glide:glide:$glideVersion",
+            // butterknife依赖
+            butterknife         : "com.jakewharton:butterknife:$butterknife",
+            butterknifeAnnotation     : "com.jakewharton:butterknife-compiler:$butterknife",
+            /******注意如果路径中有变量用"",没有变量用''******/
     ]
 }

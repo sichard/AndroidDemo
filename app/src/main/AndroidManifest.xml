@@ -177,7 +177,7 @@
         </activity>
 
 
-
+        <!-- **************Project===============>start*********-->
         <activity
             android:name=".project.WeatherActivity"
             android:label="@string/activity_weather">
@@ -232,6 +232,15 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".project.InputProfileActivity"
+            android:label="@string/activity_gpu_input">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <!-- **************Project===============>end*********-->
         <activity
             android:name=".specialeffects.RippleActivity"
             android:label="@string/activity_ripple">

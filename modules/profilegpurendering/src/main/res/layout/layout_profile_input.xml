@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.sichard.demo.project.profilegpurendering.InputProfileView
+        android:id="@+id/inputProfileView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Switch
+        android:id="@+id/gpu_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input"
+        app:layout_constraintBottom_toBottomOf="@+id/gpu_measure"
+        app:layout_constraintEnd_toStartOf="@+id/gpu_measure"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gpu_measure"
+        app:layout_constraintVertical_bias="0.159" />
+
+    <Switch
+        android:id="@+id/gpu_measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Measure"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+    <Switch
+        android:id="@+id/gpu_draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Draw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <Switch
+        android:id="@+id/gpu_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        app:layout_constraintEnd_toEndOf="@+id/gpu_input"
+        app:layout_constraintTop_toBottomOf="@+id/gpu_input" />
+
+    <Switch
+        android:id="@+id/gpu_issue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Issue"
+        app:layout_constraintEnd_toEndOf="@+id/gpu_measure"
+        app:layout_constraintTop_toBottomOf="@+id/gpu_measure" />
+
+    <Switch
+        android:id="@+id/gpu_swap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Swap"
+        app:layout_constraintEnd_toEndOf="@+id/gpu_draw"
+        app:layout_constraintTop_toBottomOf="@+id/gpu_draw" />
+
+    <Switch
+        android:id="@+id/gpu_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anim"
+        app:layout_constraintEnd_toEndOf="@+id/gpu_upload"
+        app:layout_constraintTop_toBottomOf="@+id/gpu_upload" />
+
+    <Switch
+        android:id="@+id/gpu_miscellaneous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Misc"
+        app:layout_constraintEnd_toEndOf="@+id/gpu_issue"
+        app:layout_constraintTop_toBottomOf="@+id/gpu_issue" />
+
+    <Switch
+        android:id="@+id/gpu_draw_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DrawPoint"
+        app:layout_constraintEnd_toEndOf="@+id/gpu_swap"
+        app:layout_constraintTop_toBottomOf="@+id/gpu_swap" />
+
+</android.support.constraint.ConstraintLayout>
