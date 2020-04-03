@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sichard.retrofit.RetrofitActivity">
+    tools:context="com.sichard.retrofit.mvprequest.RetrofitActivity">
 
     <Button
         android:id="@+id/retrofit"
@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:background="#ffff0000"
         android:onClick="requestRetrofit"
-        android:tag="1"
         android:text="Retrofit"
         android:textColor="#ffffff" />
 
@@ -23,7 +22,6 @@
         android:layout_toEndOf="@+id/retrofit"
         android:background="#ff00ff00"
         android:onClick="requestRxJava"
-        android:tag="2"
         android:text="RxJava"
         android:textColor="#ffffff" />
 
@@ -34,7 +32,6 @@
         android:layout_toEndOf="@+id/rx_java"
         android:background="#ff0000ff"
         android:onClick="requestRetrofitRxJava"
-        android:tag="3"
         android:text="RxJavaRetrofit"
         android:textColor="#ffffff" />
 

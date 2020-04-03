@@ -224,7 +224,7 @@
         </activity>
 
         <activity
-            android:name="com.sichard.retrofit.RetrofitActivity"
+            android:name="com.sichard.retrofit.mvprequest.RetrofitActivity"
             android:label="@string/activity_retrofit">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
