@@ -32,7 +32,7 @@ public class FloatViewUtil {
     private WindowManager.LayoutParams createLayoutParams() {
         WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
         //TYPE_PHONE只要Activity不销毁，就有悬浮框，在屏幕层
-        lp.type = WindowManager.LayoutParams.TYPE_PHONE;
+        lp.type = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY;
         lp.gravity = Gravity.LEFT|Gravity.BOTTOM;
         lp.format = PixelFormat.TRANSLUCENT;
         lp.width = WindowManager.LayoutParams.WRAP_CONTENT;

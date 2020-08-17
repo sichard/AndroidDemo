@@ -19,6 +19,7 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
+import android.support.annotation.RequiresApi;
 import android.util.DisplayMetrics;
 import android.view.GestureDetector;
 import android.view.Gravity;
@@ -77,6 +78,7 @@ public class FloatWindowsService extends Service {
         return null;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     private void createFloatView() {
         mGestureDetector = new GestureDetector(getApplicationContext(), new FloatGestrueTouchListener());
         mLayoutParams = new WindowManager.LayoutParams();
@@ -88,7 +90,7 @@ public class FloatWindowsService extends Service {
         mScreenWidth = metrics.widthPixels;
         mScreenHeight = metrics.heightPixels;
 
-        mLayoutParams.type = WindowManager.LayoutParams.TYPE_SYSTEM_ALERT;
+        mLayoutParams.type = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY ;
         mLayoutParams.format = PixelFormat.RGBA_8888;
         // 设置Window flag
         mLayoutParams.flags = WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL
