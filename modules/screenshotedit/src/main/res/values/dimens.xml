@@ -5,4 +5,6 @@
     <dimen name="screen_short_thambnail_padding">4dp</dimen>
     <dimen name="screen_short_thambnail_text_size">14dp</dimen>
     <dimen name="screen_short_thambnail_text_view_height">18dp</dimen>
+    <dimen name="circle_size">20dp</dimen>
+    <dimen name="select_circle_size">28dp</dimen>
 </resources>

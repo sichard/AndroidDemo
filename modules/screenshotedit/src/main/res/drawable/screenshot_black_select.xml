@@ -4,8 +4,8 @@
     <solid android:color="#ff000000" />
 
     <size
-        android:width="28dp"
-        android:height="28dp" />
+        android:width="@dimen/select_circle_size"
+        android:height="@dimen/select_circle_size" />
 
     <stroke
         android:width="1dp"
