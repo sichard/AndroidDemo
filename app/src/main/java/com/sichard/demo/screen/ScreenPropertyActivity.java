@@ -44,7 +44,9 @@ public class ScreenPropertyActivity extends BaseActivity {
 
         //屏幕宽高
         DisplayMetrics metric = new DisplayMetrics();
+        DisplayMetrics realMetric = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metric);
+        getWindowManager().getDefaultDisplay().getRealMetrics(realMetric);
         int width = metric.widthPixels;     // 屏幕宽度（像素）
         int height = metric.heightPixels;   // 屏幕高度（像素）
         float density = metric.density;      // 屏幕密度（0.75 / 1.0 / 1.5）
@@ -61,6 +63,9 @@ public class ScreenPropertyActivity extends BaseActivity {
         sb.append("\n");
         sb.append("height:");
         sb.append(height);
+        sb.append("\n");
+        sb.append("realHeight:");
+        sb.append(realMetric.heightPixels);
         sb.append("\n");
         sb.append("density:");
         sb.append(density);
