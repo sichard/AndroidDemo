@@ -270,6 +270,8 @@ public class SearchWebView extends FrameLayout {
 			initWebView();
 		}
 		mWebView.loadUrl(checkUrl(url));
+//		// 将下面这句代码打开，上面一行注释，可加载本地的html，测试超级链接
+//		mWebView.loadUrl("file:///android_asset/javascript.html");
 	}
 
 	/**
