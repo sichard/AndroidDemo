@@ -5,16 +5,17 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.databinding.DataBindingUtil;
 import android.media.AudioManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings.Secure;
 import android.util.DisplayMetrics;
 import android.util.Log;
-import android.widget.TextView;
 
 import com.android.sichard.common.BaseActivity;
 import com.sichard.demo.R;
+import com.sichard.demo.databinding.ScreenPropertyBinding;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -25,19 +26,13 @@ import java.util.Calendar;
 import java.util.List;
 
 public class ScreenPropertyActivity extends BaseActivity {
-    private TextView mTextView;
+    private ScreenPropertyBinding mDataBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen_property);
-        initView();
+        mDataBinding = DataBindingUtil.setContentView(this, R.layout.activity_screen_property);
         test();
-    }
-
-    @SuppressLint("NewApi")
-    private void initView() {
-        mTextView = findViewById(R.id.textView);
     }
 
     private void test() {
@@ -54,6 +49,7 @@ public class ScreenPropertyActivity extends BaseActivity {
 
         AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
         //媒体音量
+        assert audioManager != null;
         int max = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
         int current = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
 
@@ -72,7 +68,7 @@ public class ScreenPropertyActivity extends BaseActivity {
         sb.append("\n");
         sb.append("densityDpi:");
         sb.append(densityDpi);
-        String dpiString = "";
+        String dpiString;
         if (densityDpi / 160f < 1) {
             dpiString = String.valueOf(densityDpi / 160f);
         } else if (densityDpi / 160f == 1.5f) {
@@ -95,7 +91,7 @@ public class ScreenPropertyActivity extends BaseActivity {
                     dpiString = "未知";
             }
         }
-        sb.append(" = " + dpiString);
+        sb.append(" = ").append(dpiString);
         sb.append("\n");
         sb.append("Model:");
         sb.append(Build.MODEL);
@@ -116,11 +112,11 @@ public class ScreenPropertyActivity extends BaseActivity {
         sb.append(getBatteryCapacity());
         sb.append("\n");
         sb.append("Stream Volume(current/max):");
-        sb.append(current + "/" + max);
+        sb.append(current).append("/").append(max);
         sb.append("\n");
         sb.append("Version/API:");
-        sb.append(Build.VERSION.RELEASE + "/" + Build.VERSION.SDK_INT);
-        mTextView.setText(sb.toString());
+        sb.append(Build.VERSION.RELEASE).append("/").append(Build.VERSION.SDK_INT);
+        mDataBinding.textView.setText(sb.toString());
 
         createJson();
 
@@ -130,6 +126,7 @@ public class ScreenPropertyActivity extends BaseActivity {
     }
 
     private String getAndroidID(Context context) {
+        @SuppressLint("HardwareIds")
         String androidId = Secure.getString(context.getContentResolver(), Secure.ANDROID_ID);
         return androidId;
     }
@@ -153,7 +150,7 @@ public class ScreenPropertyActivity extends BaseActivity {
             array.put(object);
         }
 
-        List<JSONObject> list = new ArrayList<JSONObject>();
+        List<JSONObject> list = new ArrayList<>();
         for (int i = 0; i < array.length(); i++) {
             try {
                 if (i != 2) {
@@ -170,17 +167,16 @@ public class ScreenPropertyActivity extends BaseActivity {
         Log.i("sichard", "ScreenPropertyActivity|createJson:" + array.toString());
     }
 
-    private String getDefaultHome() {
+    private void getDefaultHome() {
         PackageManager pkgManager = this.getPackageManager();
         Intent intent = new Intent(Intent.ACTION_MAIN);
         intent.addCategory(Intent.CATEGORY_HOME);
         ResolveInfo ri = pkgManager.resolveActivity(intent, PackageManager.MATCH_DEFAULT_ONLY
                 | PackageManager.GET_SHARED_LIBRARY_FILES);
-
-        String packageName = ri.activityInfo.applicationInfo.packageName;
-        return packageName;
+        Log.i("sichardcao", "ScreenPropertyActivity|getDefaultHome:" + ri.activityInfo.applicationInfo.packageName);
     }
 
+    @SuppressLint("PrivateApi")
     private Double getBatteryCapacity() {
         Object mPowerProfile_ = null;
         double batteryCapacity = 0;
