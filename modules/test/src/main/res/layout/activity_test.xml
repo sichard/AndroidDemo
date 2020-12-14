@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sichard.test.FloatView
+        android:id="@+id/float_view"
+        android:layout_width="130dp"
+        android:layout_height="57dp"
+        android:layout_gravity="end"
+        android:background="@drawable/float_view_bg">
+
+        <ImageView
+            android:id="@+id/float_image_view"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="9dp"
+            android:background="@drawable/float_view_icon_bg"
+            android:scaleType="center"
+            android:src="@drawable/tabber_icon_keyuan_n"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/float_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@+id/float_image_view"
+            android:text="王大锤"
+            android:textColor="#572F0B"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/tabber_icon_keyuan_n" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/float_text_view"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/float_image_view"
+            android:text="ClickMe"
+            android:textColor="#572F0B"
+            android:textSize="11sp" />
+    </com.sichard.test.FloatView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -25,3 +25,5 @@ include ':modules:screenshotedit'
 include ':modules:retrofit'
 
 include ':modules:profilegpurendering'
+
+include ':modules:test'

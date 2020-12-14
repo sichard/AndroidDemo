@@ -41,6 +41,7 @@ dependencies {
     implementation project(':modules:screenshotedit')
     implementation project(':modules:retrofit')
     implementation project(':modules:profilegpurendering')
+    implementation project(':modules:test')
     implementation dep.glide
     implementation dep.butterknife
     annotationProcessor dep.butterknifeAnnotation
