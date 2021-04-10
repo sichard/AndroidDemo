@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion dep.compileSdkVersion
@@ -38,6 +39,7 @@ repositories {
 
         dirs 'libs', '../app/libs'
     }
+    mavenCentral()
 }
 
 dependencies {
@@ -49,6 +51,7 @@ dependencies {
     //编译fastJson(解析天气返回Json数据)
     implementation 'com.alibaba:fastjson:1.2.14'
     implementation project(path: ':common')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 //    implementation dep.rxJava
 //    implementation dep.rxAndroid
 }
