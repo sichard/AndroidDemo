@@ -10,6 +10,7 @@ import android.widget.CompoundButton;
 import android.widget.Switch;
 
 import com.android.sichard.common.BaseActivity;
+import com.sichard.demo.R;
 import com.sichard.demo.project.profilegpurendering.InputProfileView;
 
 import butterknife.BindView;
@@ -23,33 +24,33 @@ import butterknife.OnClick;
  * @date 2019-7-18
  */
 public class InputProfileActivity extends BaseActivity implements CompoundButton.OnCheckedChangeListener {
-    @BindView(com.sichard.demo.project.profilegpurendering.R.id.profile_container)
+    @BindView(R.id.profile_container)
     ViewGroup mContainerView;
-    @BindView(com.sichard.demo.project.profilegpurendering.R.id.inputProfileView)
+    @BindView(R.id.inputProfileView)
     InputProfileView mProfileView;
-    @BindView(com.sichard.demo.project.profilegpurendering.R.id.gpu_input)
+    @BindView(R.id.gpu_input)
     Switch mInputSwitch;
-    @BindView(com.sichard.demo.project.profilegpurendering.R.id.gpu_measure)
+    @BindView(R.id.gpu_measure)
     Switch mMeasureSwitch;
-    @BindView(com.sichard.demo.project.profilegpurendering.R.id.gpu_draw)
+    @BindView(R.id.gpu_draw)
     Switch mDrawSwitch;
-    @BindView(com.sichard.demo.project.profilegpurendering.R.id.gpu_upload)
+    @BindView(R.id.gpu_upload)
     Switch mUploadSwitch;
-    @BindView(com.sichard.demo.project.profilegpurendering.R.id.gpu_issue)
+    @BindView(R.id.gpu_issue)
     Switch mIssueSwitch;
-    @BindView(com.sichard.demo.project.profilegpurendering.R.id.gpu_swap)
+    @BindView(R.id.gpu_swap)
     Switch mSwapSwitch;
-    @BindView(com.sichard.demo.project.profilegpurendering.R.id.gpu_anim)
+    @BindView(R.id.gpu_anim)
     Switch mAnimSwitch;
-    @BindView(com.sichard.demo.project.profilegpurendering.R.id.gpu_miscellaneous)
+    @BindView(R.id.gpu_miscellaneous)
     Switch mMiscellaneousSwitch;
-    @BindView(com.sichard.demo.project.profilegpurendering.R.id.gpu_draw_point)
+    @BindView(R.id.gpu_draw_point)
     Switch mDrawPointSwitch;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.sichard.demo.project.profilegpurendering.R.layout.layout_profile_input);
+        setContentView(R.layout.layout_profile_input);
         ButterKnife.bind(this);
         init();
     }
@@ -66,7 +67,7 @@ public class InputProfileActivity extends BaseActivity implements CompoundButton
         mDrawPointSwitch.setOnCheckedChangeListener(this);
     }
 
-    @OnClick({com.sichard.demo.project.profilegpurendering.R.id.profile_container})
+    @OnClick({R.id.profile_container})
     public void onViewClicked() {
         mProfileView.refreshCurrentTime();
     }
