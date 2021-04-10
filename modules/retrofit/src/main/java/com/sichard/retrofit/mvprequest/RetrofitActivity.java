@@ -27,7 +27,51 @@ public class RetrofitActivity extends MvpBaseActivity<RequestPresenter> implemen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_retrofit);
         mTextView = findViewById(R.id.info);
+
+//        anr();
+
     }
+
+
+
+//    /*第一种方式：runnable持有activity的引用*/
+//    private Handler mHandler = new Handler();
+//
+//    private void testHandler() {
+//        mHandler.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//            }
+//        }, 5 * 60 * 1000);
+//
+//    }
+
+
+//    /*第二种方式：Handler持有activity应用*/
+//    private Handler mHandler = new Handler() {
+//        @Override
+//        public void handleMessage(Message msg) {
+//        }
+//    };
+//
+//    private void testHandler() {
+//        mHandler.sendEmptyMessageDelayed(1, 5 * 60 * 1000);
+//    }
+
+
+    /*第三种方法：Callback持有activity的引用，但是Callbak在WeakRefHandler中是弱引用，故可以释放*/
+    // 注意此处mCallback不可以改成匿名内部类
+//    private Handler.Callback mCallback = new Handler.Callback() {
+//        @Override
+//        public boolean handleMessage(Message msg) {
+//            mTextView.setText("收到消息！");
+//            return true;
+//        }
+//    };
+//    private Handler mHandler = new WeakRefHandler(mCallback);
+//    private void testHandler() {
+//        mHandler.sendEmptyMessageDelayed(1, 5 * 1000);
+//    }
 
     @Override
     protected RequestPresenter createPresenter() {
