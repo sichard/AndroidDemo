@@ -24,7 +24,11 @@ class RequestPresenter : BasePresenter<RequestContract.Model, RequestContract.Vi
         mMode!!.retrofitRequest(type, object : ResponseCallback {
             override fun requestSuccess(result: List<Post>?) {
                 mProxyView.showRetrofitResult(type, result)
-                Log.i("sichardcao", mProxyView.showString().toString())
+                Log.i("sichardcao", "我是函数返回值：" + mProxyView.showString().toString())
+                Log.i("sichardcao", "我是函数返回值：" + mProxyView.showString1())
+                Log.i("sichardcao", "我是函数返回值：" + mProxyView.showString("我是入参").toString())
+                Log.i("sichardcao", "我是函数返回值：" + mProxyView.showString2("我是入参"))
+                Log.e("sichardcao", "---------------------")
             }
 
             override fun onError(errMessage: String?) {

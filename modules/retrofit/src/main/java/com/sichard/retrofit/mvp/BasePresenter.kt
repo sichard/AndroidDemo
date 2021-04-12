@@ -50,10 +50,10 @@ abstract class BasePresenter<M : IModel, V : IView> {
         //注意下面返回值"Any?"中的?不可省略，因为invoke方法可能返回null
         override fun invoke(proxy: Any, method: Method, args: Array<out Any>?): Any? {
             //如果V层没被销毁, 执行V层的方法.
-            return mWeakReferenceView?.get()?.run {
+            return mWeakReferenceView?.get()?.let {
                 //emptyArray()是为了防止方法输入参数为0时报错
-                method.invoke(this, *(args ?: emptyArray()))
-            } ?: Unit
+                method.invoke(it, *(args ?: emptyArray()))
+            }
         }
     }
 }

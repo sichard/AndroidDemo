@@ -21,6 +21,9 @@ interface RequestContract {
          * 用来测试内存泄漏的方法
          */
         fun showString()
+        fun showString1(): String
+        fun showString(string: String)
+        fun showString2(string: String): String
 
         companion object {
             const val RETROFIT = 1

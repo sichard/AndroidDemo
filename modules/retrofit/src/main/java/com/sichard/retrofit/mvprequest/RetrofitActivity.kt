@@ -68,21 +68,21 @@ class RetrofitActivity : MvpBaseActivity<RequestPresenter, RequestContract.View>
      * 直接通过retrofit自带的队列来完成异步操作请求，并在主线程回调
      */
     fun requestRetrofit(view: View?) {
-        mPresenter.retrofitRequest(RequestContract.View.Companion.RETROFIT)
+        mPresenter.retrofitRequest(RequestContract.View.RETROFIT)
     }
 
     /**
      * 用RxJava完成异步请求
      */
     fun requestRxJava(view: View?) {
-        mPresenter.retrofitRequest(RequestContract.View.Companion.RXJAVA)
+        mPresenter.retrofitRequest(RequestContract.View.RXJAVA)
     }
 
     /**
      * 在Retrofit加入对RxJava的支持，使Retrofit接口直接返回Observable，从而省去了RxJava自己调用create()方法来创建Observable
      */
     fun requestRetrofitRxJava(view: View?) {
-        mPresenter.retrofitRequest(RequestContract.View.Companion.RETROFIT_RXJAVA)
+        mPresenter.retrofitRequest(RequestContract.View.RETROFIT_RXJAVA)
     }
 
     override fun showRequesting(type: Int) {
@@ -90,10 +90,10 @@ class RetrofitActivity : MvpBaseActivity<RequestPresenter, RequestContract.View>
         mTextView!!.text = "正在请求中，请稍后..."
     }
 
-    override fun showRetrofitResult(type: Int, posts: List<Post>?) {
+    override fun showRetrofitResult(type: Int, result: List<Post>?) {
         val builder = StringBuilder()
-        if (posts != null) {
-            for (post in posts) {
+        if (result != null) {
+            for (post in result) {
                 builder.append(post.body)
                 builder.append("\n---------------------\n")
             }
@@ -104,9 +104,9 @@ class RetrofitActivity : MvpBaseActivity<RequestPresenter, RequestContract.View>
 
     private fun setTextcolor(type: Int) {
         when (type) {
-            RequestContract.View.Companion.RETROFIT -> mTextView!!.setTextColor(Color.RED)
-            RequestContract.View.Companion.RXJAVA -> mTextView!!.setTextColor(Color.GREEN)
-            RequestContract.View.Companion.RETROFIT_RXJAVA -> mTextView!!.setTextColor(Color.BLUE)
+            RequestContract.View.RETROFIT -> mTextView!!.setTextColor(Color.RED)
+            RequestContract.View.RXJAVA -> mTextView!!.setTextColor(Color.GREEN)
+            RequestContract.View.RETROFIT_RXJAVA -> mTextView!!.setTextColor(Color.BLUE)
         }
     }
 
@@ -115,6 +115,18 @@ class RetrofitActivity : MvpBaseActivity<RequestPresenter, RequestContract.View>
     }
 
     override fun showString() {
-        Log.i("sichardcao", "---showString")
+        Log.d("sichardcao", "我入参和出参都是空")
+    }
+
+    override fun showString(string: String) {
+        Log.d("sichardcao", "入参 = $string")
+    }
+
+    override fun showString1(): String {
+        return "我是出参".apply { Log.d("sichardcao", this) }
+    }
+
+    override fun showString2(string: String): String {
+        return string.plus("+我是返回值").apply { Log.d("sichardcao", this) }
     }
 }
